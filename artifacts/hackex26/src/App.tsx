@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import {
-  ArrowDownRight, ArrowRight, Check, CircleCheck, Code2, Download, Factory, GraduationCap,
-  HeartPulse, Lightbulb, Mail, Menu, MessageCircleQuestion, Plus, Rocket, Send, ShieldCheck,
-  Trophy, Users, WalletCards, X,
+  ArrowDownRight, ArrowRight, BrainCircuit, Check, CircleCheck, Cloud, Code2, Database, Download,
+  Factory, GraduationCap, HeartPulse, Lightbulb, Mail, Menu, MessageCircleQuestion, Plus, Rocket,
+  Send, ShieldCheck, Trophy, Users, WalletCards, X,
 } from 'lucide-react';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
@@ -89,6 +89,34 @@ function Header() {
 }
 
 function Hero() {
+  const artRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const art = artRef.current;
+    if (!art) return;
+    const handlePointerMove = (event: PointerEvent) => {
+      const bounds = art.getBoundingClientRect();
+      const x = ((event.clientX - bounds.left) / bounds.width - 0.5) * 2;
+      const y = ((event.clientY - bounds.top) / bounds.height - 0.5) * 2;
+      art.style.setProperty('--parallax-x', `${x * 18}px`);
+      art.style.setProperty('--parallax-y', `${y * 14}px`);
+      art.style.setProperty('--tilt-x', `${y * -3}deg`);
+      art.style.setProperty('--tilt-y', `${x * 4}deg`);
+    };
+    const resetPointer = () => {
+      art.style.setProperty('--parallax-x', '0px');
+      art.style.setProperty('--parallax-y', '0px');
+      art.style.setProperty('--tilt-x', '0deg');
+      art.style.setProperty('--tilt-y', '0deg');
+    };
+    art.addEventListener('pointermove', handlePointerMove);
+    art.addEventListener('pointerleave', resetPointer);
+    return () => {
+      art.removeEventListener('pointermove', handlePointerMove);
+      art.removeEventListener('pointerleave', resetPointer);
+    };
+  }, []);
+
   return (
     <>
       <section className="hero" id="home">
@@ -110,16 +138,23 @@ function Hero() {
               <div className="fact"><b>Offline</b><span>On campus<br />Excel EEC</span></div>
             </div>
           </div>
-          <div className="hero-art" aria-label="Illustration of a coding laptop">
+          <div ref={artRef} className="hero-art" aria-label="Illustration of a coding laptop">
             <div className="orbit" aria-hidden="true"><span className="orbit-dot" /></div>
-            <div className="laptop">
-              <div className="laptop-screen">
-                <div className="screen-inner">
-                  <div className="screen-code"><i>const</i> team = [<br />&nbsp;&nbsp;<b>'imagine'</b>,<br />&nbsp;&nbsp;<b>'build'</b>,<br />&nbsp;&nbsp;<b>'impact'</b><br />];</div>
-                  <div className="screen-chip"><Code2 size={23} /></div>
+            <div className="float-node node-code" aria-hidden="true"><span><Code2 size={20} /></span></div>
+            <div className="float-node node-ai" aria-hidden="true"><span><BrainCircuit size={20} /></span></div>
+            <div className="float-node node-cloud" aria-hidden="true"><span><Cloud size={20} /></span></div>
+            <div className="float-node node-data" aria-hidden="true"><span><Database size={20} /></span></div>
+            <div className="float-node node-idea" aria-hidden="true"><span><Lightbulb size={20} /></span></div>
+            <div className="laptop-stage">
+              <div className="laptop">
+                <div className="laptop-screen">
+                  <div className="screen-inner">
+                    <div className="screen-code"><i>const</i> team = [<br />&nbsp;&nbsp;<b>'imagine'</b>,<br />&nbsp;&nbsp;<b>'build'</b>,<br />&nbsp;&nbsp;<b>'impact'</b><br />];</div>
+                    <div className="screen-chip"><Code2 size={23} /></div>
+                  </div>
                 </div>
+                <div className="laptop-base" />
               </div>
-              <div className="laptop-base" />
             </div>
             <div className="hero-stamp">36 HOURS<br /><strong>ONE SHARED<br />MISSION</strong></div>
           </div>
