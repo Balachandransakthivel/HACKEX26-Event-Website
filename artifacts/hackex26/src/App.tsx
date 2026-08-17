@@ -2,8 +2,8 @@ import { useEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import {
   ArrowDownRight, ArrowRight, BrainCircuit, Check, CircleCheck, Cloud, Code2, Database, Download,
-  Factory, GraduationCap, HeartPulse, Lightbulb, Mail, Menu, MessageCircleQuestion, Plus, Rocket,
-  Send, ShieldCheck, Trophy, Users, WalletCards, X,
+  Factory, GraduationCap, HeartPulse, Instagram, Lightbulb, Mail, Menu, MessageCircleQuestion, Plus, Rocket,
+  Search, Send, ShieldCheck, Trophy, Users, WalletCards, X,
 } from 'lucide-react';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
@@ -305,7 +305,7 @@ function Timeline() {
         <Reveal className="timeline-wrap">
           <div className="timeline-line"><div className="timeline-progress" /></div>
           <div className="timeline-items">
-            {items.map(([date, title, copy], index) => <div className={`timeline-item ${index < 2 ? 'active' : ''}`} key={title}><div className="timeline-dot">{index < 2 ? <Check size={14} /> : `0${index + 1}`}</div><div><span className="timeline-date">{date}</span><h3>{title}</h3><p>{copy}</p></div></div>)}
+            {items.map(([date, title, copy], index) => <Reveal key={title} className="timeline-reveal"><div className={`timeline-item ${index < 2 ? 'active' : ''}`}><div className="timeline-dot">{index < 2 ? <Check size={14} /> : `0${index + 1}`}</div><div className="timeline-content"><span className="timeline-date">{date}</span><h3>{title}</h3><p>{copy}</p></div></div></Reveal>)}
           </div>
         </Reveal>
       </div>
@@ -345,7 +345,7 @@ function Prizes() {
         <Reveal className="criteria">
           <h3 className="display">What the jury looks for.</h3>
           <div className="criteria-list">
-            {[[30, 'Innovation'], [30, 'Impact'], [25, 'Technical execution'], [15, 'Presentation']].map(([number, label]) => <div className="criterion" key={label as string}><b>{number}%</b><span>{label}</span></div>)}
+            {[[30, 'Innovation'], [30, 'Impact'], [25, 'Technical execution'], [15, 'Presentation design']].map(([number, label], index) => <div className="criterion" key={label as string}><div className="criterion-head"><span>{label}</span><b>{number}%</b></div><div className="criterion-bar"><i style={{ ['--bar-width' as string]: `${number}%`, width: 0, animationDelay: `${index * 0.12}s` }} /></div></div>)}
           </div>
         </Reveal>
       </div>
@@ -397,8 +397,8 @@ function People() {
       <div className="container">
         <Reveal><SectionHeading eyebrow="08 / the people behind it" title="A serious build needs a good room." copy="Reach the organisers before the event, and find the right people once you are on campus." /></Reveal>
         <div className="people-grid">
-          <Reveal><div className="people-column"><h3>Faculty coordinators</h3>{[['Dr. K. Geetha', 'Professor / CSE'], ['Mr. E. Deepan Kumar', 'Assistant Professor / CSE']].map(([name, role]) => <div className="person" key={name}><div><strong>{name}</strong><span>{role}</span></div><ShieldCheck size={19} /></div>)}</div></Reveal>
-          <Reveal><div className="people-column"><h3>Student coordinators</h3>{[['S. Akashresi', 'Student coordinator'], ['S. Balachandran IV', 'Student coordinator']].map(([name, role]) => <div className="person" key={name}><div><strong>{name}</strong><span>{role}</span></div><Users size={19} /></div>)}</div></Reveal>
+          <Reveal><div className="people-column"><h3>Faculty coordinators</h3>{[['Dr. K. Geetha M.E., Ph.D', 'Professor / 97152 50646'], ['Mr. E. Deepan Kumar M.E', 'Assistant Professor / 99523 02646']].map(([name, role]) => <div className="person" key={name}><div><strong>{name}</strong><span>{role}</span></div><ShieldCheck size={19} /></div>)}</div></Reveal>
+          <Reveal><div className="people-column"><h3>Student coordinators</h3>{[['S. Akashresi', 'IV-Year / 87785 28831'], ['S. Balachandran', 'IV-Year / 93427 27360']].map(([name, role]) => <div className="person" key={name}><div><strong>{name}</strong><span>{role}</span></div><Users size={19} /></div>)}</div></Reveal>
         </div>
         <Reveal><div className="contact-band"><div><span>Email the team</span><strong>hackex2026@gmail.com</strong></div><div><span>Follow the build</span><strong>@excel_cse_official</strong></div><a href="#register" className="button-primary" data-testid="button-contact-register">Register now <ArrowRight size={14} /></a></div></Reveal>
       </div>
@@ -408,6 +408,60 @@ function People() {
 
 function Field({ label, value, onChange, placeholder, type = 'text', required = false, name, error }: { label: string; value: string; onChange: (value: string) => void; placeholder?: string; type?: string; required?: boolean; name: string; error?: string }) {
   return <div className="field"><label htmlFor={name}>{label}{required && ' *'}</label><input id={name} name={name} type={type} required={required} value={value} onChange={(event) => onChange(event.target.value)} placeholder={placeholder} data-testid={`input-${name}`} />{error && <span className="field-error">{error}</span>}</div>;
+}
+
+function ThemePicker({ value, onChange, error }: { value: string; onChange: (value: string) => void; error?: string }) {
+  const [open, setOpen] = useState(false);
+  const [query, setQuery] = useState('');
+  const wrapRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const filtered = themes.filter((theme) => theme.name.toLowerCase().includes(query.trim().toLowerCase()));
+  useEffect(() => {
+    const handler = (event: MouseEvent) => {
+      if (wrapRef.current && !wrapRef.current.contains(event.target as Node)) setOpen(false);
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
+  const toggle = () => {
+    const next = !open;
+    setOpen(next);
+    if (next) window.setTimeout(() => inputRef.current?.focus(), 0);
+  };
+  const select = (name: string) => { onChange(name); setOpen(false); setQuery(''); };
+  return (
+    <div className={`field theme-picker ${open ? 'open' : ''}`} ref={wrapRef}>
+      <label htmlFor="theme-search">Primary theme *</label>
+      <button type="button" className="theme-picker-trigger" onClick={toggle} data-testid="theme-picker-trigger">
+        <span className={value ? '' : 'placeholder'}>{value || 'Choose your arena'}</span>
+        <span className="theme-picker-arrow">{open ? '▲' : '▼'}</span>
+      </button>
+      {open && (
+        <div className="theme-picker-dropdown">
+          <div className="theme-picker-search">
+            <Search size={16} />
+            <input id="theme-search" ref={inputRef} value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search themes…" data-testid="theme-picker-search" />
+          </div>
+          <ul className="theme-picker-list">
+            {filtered.map((theme) => {
+              const Icon = theme.icon;
+              return (
+                <li key={theme.name}>
+                  <button type="button" className={`theme-picker-item ${value === theme.name ? 'selected' : ''}`} onClick={() => select(theme.name)} data-testid={`theme-option-${theme.name}`}>
+                    <span className="theme-picker-icon"><Icon size={18} /></span>
+                    <span className="theme-picker-text"><strong>{theme.name}</strong><small>{theme.description}</small></span>
+                    {value === theme.name && <Check size={16} className="theme-picker-check" />}
+                  </button>
+                </li>
+              );
+            })}
+            {filtered.length === 0 && <li className="theme-picker-empty">No themes match “{query}”.</li>}
+          </ul>
+        </div>
+      )}
+      {error && <span className="field-error">{error}</span>}
+    </div>
+  );
 }
 
 function ReviewRow({ label, value }: { label: string; value: string }) {
@@ -503,7 +557,6 @@ function Registration() {
   return (
     <section className="register" id="register">
       <div className="container">
-        <Reveal><div className="register-heading"><div><span className="eyebrow">09 / your turn</span><h2 className="display">Assemble your team.</h2></div><p className="register-intro">Five short steps. One clear idea. Registration is free in Round 1.</p></div></Reveal>
         <Reveal>
           <div className="register-shell">
             <aside className="register-sidebar">
@@ -543,7 +596,7 @@ function Registration() {
                     <div className="field"><label htmlFor="year">Current year *</label><select id="year" value={form.year} onChange={(e) => update('year', e.target.value)} data-testid="select-year"><option value="">Select year</option><option>First year</option><option>Second year</option><option>Third year</option><option>Final year</option><option>Postgraduate</option></select>{errors.year && <span className="field-error">{errors.year}</span>}</div>
                   </div>}
                   {step === 3 && <div className="form-grid">
-                    <div className="field"><label htmlFor="theme">Primary theme *</label><select id="theme" value={form.theme} onChange={(e) => update('theme', e.target.value)} data-testid="select-theme"><option value="">Choose your arena</option>{themes.map((theme) => <option key={theme.name}>{theme.name}</option>)}</select>{errors.theme && <span className="field-error">{errors.theme}</span>}</div>
+                    <ThemePicker value={form.theme} onChange={(v) => update('theme', v)} error={errors.theme} />
                     <Field name="technology" label="Technology / stack" value={form.technology} onChange={(v) => update('technology', v)} placeholder="React, Python, IoT..." required error={errors.technology} />
                     <div className="field full"><label htmlFor="problem">What problem are you solving? *</label><textarea id="problem" value={form.problem} onChange={(e) => update('problem', e.target.value)} placeholder="Make the problem specific. Who feels it? What is at stake?" data-testid="textarea-problem" />{errors.problem && <span className="field-error">{errors.problem}</span>}</div>
                     <div className="field full"><label htmlFor="solution">What will you build? *</label><textarea id="solution" value={form.solution} onChange={(e) => update('solution', e.target.value)} placeholder="Give us the first version of the solution in plain language." data-testid="textarea-solution" />{errors.solution && <span className="field-error">{errors.solution}</span>}</div>
@@ -566,11 +619,11 @@ function Footer() {
     <footer className="footer">
       <div className="container">
         <div className="footer-grid">
-          <div><div className="footer-brand display">HACKEX’26</div><p>A national-level hackathon by Excel Engineering College, Techno Debuggers Club and the Department of Computer Science & Engineering.</p></div>
+          <div><div className="footer-brand display">HACKEX’26</div><p>A national-level hackathon by Excel Engineering College (Autonomous), Komarapalayam, Namakkal – 637303, Techno Debuggers Club and the Department of Computer Science &amp; Engineering.</p><a href="https://instagram.com/excel_cse_official" target="_blank" rel="noopener noreferrer" data-testid="link-footer-instagram"><Instagram size={13} style={{ verticalAlign: 'middle', marginRight: 7 }} />@excel_cse_official</a></div>
           <div><h3>Navigate</h3>{[['About', '#about'], ['Themes', '#themes'], ['Timeline', '#timeline'], ['Prizes', '#prizes']].map(([label, href]) => <a href={href} key={href} data-testid={`link-footer-${label.toLowerCase()}`}>{label}</a>)}</div>
           <div><h3>Say hello</h3><a href="mailto:hackex2026@gmail.com" data-testid="link-footer-email"><Mail size={13} style={{ verticalAlign: 'middle', marginRight: 7 }} />hackex2026@gmail.com</a><a href="#contact" data-testid="link-footer-coordinators">Coordinators</a><a href="#register" data-testid="link-footer-register"><ArrowRight size={13} style={{ verticalAlign: 'middle', marginRight: 7 }} />Register your team</a></div>
         </div>
-        <div className="footer-bottom"><span>© 2026 HACKEX / Excel Engineering College</span><span>Built for builders, with a deadline.</span></div>
+        <div className="footer-bottom"><span>© 2026 HACKEX / Excel Engineering College (Autonomous), Komarapalayam, Namakkal – 637303</span><span>Built for builders, with a deadline.</span></div>
       </div>
     </footer>
   );
