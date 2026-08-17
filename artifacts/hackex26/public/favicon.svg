@@ -1,3 +1,6 @@
 <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="180" height="180" rx="36" fill="#FF3C00"/>
+  <rect width="180" height="180" rx="36" fill="#0C2369"/>
+  <rect width="170" height="170" x="5" y="5" rx="31" stroke="#0088FF" stroke-width="4" stroke-opacity="0.5"/>
+  <text x="90" y="118" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="80" fill="white" text-anchor="middle" letter-spacing="-3">HX</text>
 </svg>
+
