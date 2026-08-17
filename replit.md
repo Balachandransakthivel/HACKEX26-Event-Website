@@ -1,6 +1,6 @@
-# [Project name]
+# HACKEX’26 Event Website
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A premium, responsive event website for HACKEX’26, the national-level hackathon organized by Excel Engineering College.
 
 ## Run & Operate
 
@@ -22,15 +22,21 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/hackex26/src/App.tsx` — single-page event experience, content, interactions, and registration flow
+- `artifacts/hackex26/src/index.css` — event visual system, responsive layout, motion, circuitry, and card treatments
+- `attached_assets/WhatsApp_Image_2026-08-17_at_12.39.44_PM_1786957997551.jpeg` — official poster reference
+- `artifacts/api-server` — shared API service scaffold; the event site currently runs as a frontend-first artifact
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- The event site is presentation-first and keeps the first release lightweight; the hero laptop and theme visuals use CSS/SVG treatments instead of a heavy 3D runtime.
+- Registration is a five-step client-side flow with localStorage persistence and an optional Google Apps Script POST adapter.
+- Without `VITE_GOOGLE_APPS_SCRIPT_URL`, the site completes a transparent local-only demo flow rather than pretending an external sheet submission succeeded.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+- Visitors can explore official event details, themes, timeline, prizes, judging criteria, rules, coordinators, and FAQs.
+- Teams can submit a Round 1 registration, review their entries, receive a generated registration ID, and save a confirmation copy.
 
 ## User preferences
 
@@ -38,7 +44,7 @@ _Populate as you build — explicit user instructions worth remembering across s
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- Set `VITE_GOOGLE_APPS_SCRIPT_URL` in the frontend environment when the organiser’s Google Apps Script endpoint is ready; the UI states clearly when the endpoint is not configured.
 
 ## Pointers
 

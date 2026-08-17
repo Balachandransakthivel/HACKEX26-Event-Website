@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "HACKEX’26"
+description = "A premium futuristic event website for HACKEX’26, the national level hackathon organized by Excel Engineering College. Includes event information, animated themes, prizes, timeline, FAQs, and a multi-step team registration experience."
+version = "1.0.0"
+id = "artifacts/hackex26"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18944
+
+[services.development]
+run = "pnpm --filter @workspace/hackex26 run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/hackex26", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/hackex26/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18944"
+BASE_PATH = "/"
