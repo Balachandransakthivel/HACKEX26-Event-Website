@@ -1,0 +1,2419 @@
+Absolutely. If you want to **create the complete HACKEX'26 event website**, here is the full content and structure you can give to a designer/Canva/Figma/AI website builder. **No code**—only the complete website content, sections, UI ideas, animations, 3D concepts, and registration details based on your poster.
+
+# HACKEX'26 — Complete Website Content & Design Specification
+
+## 1. Website Identity
+
+**Event Name:**
+HACKEX'26
+
+**Event Type:**
+A National Level Hackathon
+
+**Organised By:**
+**Techno Debuggers Club**
+and
+**Department of Computer Science and Engineering**
+
+**Institution:**
+**Excel Engineering College (Autonomous)**
+
+**Event Date:**
+**25–26 September 2026**
+
+**Duration:**
+**36 Hours**
+
+**Mode:**
+**Offline — On Campus**
+
+**Team Size:**
+**Maximum 4 Members per Team**
+
+**Tagline:**
+
+> **CODE. COLLABORATE. CREATE IMPACT.**
+
+Alternative supporting tagline:
+
+> **BUILD. THINK. INNOVATE.**
+
+And:
+
+> **INNOVATE TODAY. IMPACT TOMORROW.**
+
+---
+
+# 2. Overall Website Style
+
+The website should look like a **premium futuristic national-level hackathon website**, while maintaining the exact visual identity of the poster.
+
+### Main colors
+
+* Deep Navy Blue
+* Royal Blue
+* Electric Blue
+* White
+* Very light blue
+* Small amounts of cyan glow
+
+### Design language
+
+Use:
+
+* Futuristic technology style
+* Clean white background
+* Blue glowing elements
+* Glassmorphism cards
+* Thin circuit-board patterns
+* 3D floating objects
+* Soft shadows
+* Rounded cards
+* Gradient borders
+* Animated particles
+* Code symbols
+* Digital grid
+* Neon blue highlights
+
+### Typography
+
+Use a strong futuristic font for:
+
+**HACKEX'26**
+
+And a clean modern font for:
+
+* Description
+* Registration form
+* Event details
+* Themes
+* Rules
+* Contact information
+
+---
+
+# 3. Navigation Bar
+
+The top navigation should contain:
+
+**HACKEX'26 Logo**
+
+Menu:
+
+* Home
+* About
+* Themes
+* Timeline
+* Prizes
+* Rules
+* FAQ
+* Register
+
+Right side:
+
+### 🚀 REGISTER NOW
+
+The navigation should remain visible while scrolling.
+
+---
+
+# 4. HERO SECTION
+
+This is the most important section.
+
+### Small badge
+
+**NATIONAL LEVEL HACKATHON**
+
+### Main title
+
+# HACKEX'26
+
+### Subtitle
+
+**CODE. COLLABORATE. CREATE IMPACT.**
+
+### Description
+
+> Get ready for 36 hours of non-stop innovation, collaboration and problem solving at HACKEX'26. Bring your ideas to life, build impactful solutions and compete with talented innovators from across the nation.
+
+### Event information
+
+**25–26 SEPTEMBER 2026**
+
+**36 HOURS**
+
+**4 MEMBERS / TEAM**
+
+**OFFLINE • ON CAMPUS**
+
+### Main button
+
+**🚀 REGISTER NOW**
+
+### Secondary button
+
+**EXPLORE HACKEX'26**
+
+---
+
+# 5. Hero 3D Design
+
+Instead of simply displaying the poster, use a large **3D futuristic laptop**.
+
+The laptop screen can display:
+
+```text
+> HACKEX'26
+> INITIALIZING...
+> BUILD
+> INNOVATE
+> COLLABORATE
+> CREATE IMPACT
+```
+
+Around the laptop:
+
+* Floating `</>` symbol
+* AI brain
+* Light bulb
+* Database icon
+* Cloud icon
+* Code windows
+* Circuit lines
+* Floating particles
+* Blue glowing rings
+
+The laptop should slowly rotate or float.
+
+### Animation
+
+The laptop should:
+
+**Move upward → slightly rotate → move downward → repeat**
+
+The surrounding technology icons should have independent floating animations.
+
+---
+
+# 6. Countdown Section
+
+Immediately below the hero.
+
+### Heading
+
+# THE COUNTDOWN HAS BEGUN
+
+Display:
+
+**DAYS | HOURS | MINUTES | SECONDS**
+
+Target:
+
+### 25 SEPTEMBER 2026
+
+Example:
+
+**39 DAYS : 08 HOURS : 42 MINUTES : 16 SECONDS**
+
+The numbers should animate smoothly.
+
+---
+
+# 7. About HACKEX'26
+
+### Heading
+
+# WHAT IS HACKEX'26?
+
+### Content
+
+> HACKEX'26 is a National Level Hackathon organised by the Techno Debuggers Club and the Department of Computer Science and Engineering, Excel Engineering College (Autonomous).
+>
+> The event brings together passionate students, developers, innovators and problem solvers to create technology-driven solutions for real-world challenges.
+>
+> Participants will work collaboratively, think creatively and build innovative solutions during an intense 36-hour offline hackathon.
+
+### Highlight cards
+
+**36 HOURS**
+Non-stop Innovation
+
+**4 MEMBERS**
+Per Team
+
+**5 THEMES**
+Multiple Problem Domains
+
+**OFFLINE**
+On Campus Experience
+
+---
+
+# 8. Why HACKEX'26?
+
+### Heading
+
+# WHY PARTICIPATE?
+
+Create five futuristic cards.
+
+### 🧠 BUILD
+
+Build practical solutions for real-world problems.
+
+### 🤝 COLLABORATE
+
+Work with talented teammates, developers and innovators.
+
+### 🚀 INNOVATE
+
+Transform your ideas into working prototypes.
+
+### 🏆 WIN
+
+Compete for exciting prizes and recognition.
+
+### 🌐 CONNECT
+
+Network with experts, mentors and fellow innovators.
+
+---
+
+# 9. Hackathon Themes
+
+### Heading
+
+# CHOOSE YOUR BATTLEFIELD
+
+Subtitle:
+
+> Pick a theme. Find a problem. Build the future.
+
+There are **5 official themes**.
+
+---
+
+## ❤️ 01 — HEALTHCARE
+
+### Description
+
+> Develop innovative technology solutions that improve healthcare accessibility, patient experience, health monitoring, medical services and overall wellness.
+
+### Possible problem areas
+
+* Smart health monitoring
+* Telemedicine
+* AI-assisted healthcare
+* Patient management
+* Medical accessibility
+* Health awareness
+* Emergency response
+* Mental wellness
+* Healthcare analytics
+
+### 3D visual
+
+A floating medical cross / heartbeat line with a digital health dashboard.
+
+---
+
+# 🎓 02 — EDUTECH
+
+### Description
+
+> Reimagine education using technology to create personalized, accessible and engaging learning experiences for students, educators and institutions.
+
+### Possible problem areas
+
+* AI-based learning
+* Personalized education
+* Smart classrooms
+* Student performance
+* Skill development
+* Digital learning
+* Teacher assistance
+* Accessibility
+* Learning analytics
+
+### 3D visual
+
+Floating graduation cap surrounded by:
+
+* AI
+* Books
+* Code
+* Learning analytics
+
+---
+
+# ₹ 03 — FINTECH
+
+### Description
+
+> Build innovative financial technology solutions that make financial services smarter, safer, faster and more accessible.
+
+### Possible problem areas
+
+* Digital payments
+* Financial management
+* Fraud detection
+* Financial inclusion
+* Personal finance
+* Banking technology
+* Investment tools
+* Secure transactions
+* Financial analytics
+
+### 3D visual
+
+A floating digital rupee coin surrounded by payment interfaces and financial graphs.
+
+---
+
+# 🏭 04 — INDUSTRIAL 5.0
+
+### Description
+
+> Create next-generation industrial solutions by combining humans, AI, robotics, automation, IoT and intelligent technologies to build sustainable and human-centric industries.
+
+### Possible problem areas
+
+* Smart manufacturing
+* Industrial automation
+* Robotics
+* Predictive maintenance
+* IoT
+* AI-powered industries
+* Human-machine collaboration
+* Industrial safety
+* Sustainable manufacturing
+
+### 3D visual
+
+A robotic arm with glowing blue circuits and a digital factory.
+
+---
+
+# 💡 05 — OPEN INNOVATION
+
+### Description
+
+> No boundaries. Bring your own innovative idea and use technology, creativity and collaboration to solve a meaningful real-world problem.
+
+### Possible areas
+
+* AI
+* Web
+* Mobile
+* IoT
+* Cloud
+* Cybersecurity
+* Blockchain
+* Sustainability
+* Smart cities
+* Any innovative technology solution
+
+### 3D visual
+
+A glowing light bulb surrounded by code, AI, cloud and circuit elements.
+
+---
+
+# 10. How the Hackathon Works
+
+Create a futuristic timeline.
+
+### STEP 01
+
+## REGISTER
+
+Submit your team details and idea online.
+
+**Round 1 Registration — FREE**
+
+---
+
+### STEP 02
+
+## SUBMIT
+
+Submit your initial problem statement / idea before the event.
+
+---
+
+### STEP 03
+
+## SELECTION
+
+Eligible teams are shortlisted for Round 2.
+
+---
+
+### STEP 04
+
+## CONFIRM
+
+Selected teams complete the Round 2 payment.
+
+### ₹1,500 / TEAM
+
+---
+
+### STEP 05
+
+## HACK
+
+Participate in the 36-hour offline hackathon.
+
+---
+
+### STEP 06
+
+## BUILD
+
+Develop your prototype with your team.
+
+---
+
+### STEP 07
+
+## PRESENT
+
+Present your solution to the judging panel.
+
+---
+
+### STEP 08
+
+## WIN
+
+Compete for prizes, recognition and certificates.
+
+---
+
+# 11. Registration Structure
+
+This should be one of the biggest sections.
+
+# REGISTER YOUR TEAM
+
+### Subtitle
+
+> Your idea could be the next big innovation. Register your team and start building.
+
+---
+
+## Step 1 — Team Details
+
+### Team Name *
+
+Enter your team name.
+
+### Team Size *
+
+Maximum:
+
+**4 Members**
+
+### Team Leader Name *
+
+### Phone Number *
+
+### Email Address *
+
+---
+
+# Step 2 — College Details
+
+### College Name *
+
+### Department *
+
+### Year of Study *
+
+Options:
+
+* I Year
+* II Year
+* III Year
+* IV Year
+
+---
+
+# Step 3 — Team Members
+
+### Member 1 — Team Leader
+
+* Name
+* Email
+* Phone
+* College
+* Department
+* Year
+
+### Member 2
+
+* Name
+* Email
+* Phone
+* College
+* Department
+* Year
+
+### Member 3
+
+* Name
+* Email
+* Phone
+* College
+* Department
+* Year
+
+### Member 4
+
+* Name
+* Email
+* Phone
+* College
+* Department
+* Year
+
+For teams with fewer than 4 members, the remaining fields can be optional.
+
+---
+
+# 12. Idea Submission
+
+### Preferred Theme *
+
+Dropdown:
+
+* Healthcare
+* Edutech
+* Fintech
+* Industrial 5.0
+* Open Innovation
+
+### Problem Statement *
+
+> What real-world problem are you trying to solve?
+
+### Solution Description *
+
+> Briefly explain your proposed solution.
+
+### Technology Stack
+
+Examples:
+
+* React
+* Node.js
+* Python
+* Java
+* AI/ML
+* Cloud
+* IoT
+* Blockchain
+* Mobile
+* etc.
+
+### GitHub URL
+
+Optional.
+
+### Project / Portfolio URL
+
+Optional.
+
+---
+
+# 13. Google Sheet Registration
+
+All submitted registrations should be stored in a Google Sheet.
+
+### Google Sheet columns
+
+| Column              |
+| ------------------- |
+| Timestamp           |
+| Registration ID     |
+| Team Name           |
+| Team Size           |
+| Team Leader         |
+| Leader Phone        |
+| Leader Email        |
+| College             |
+| Department          |
+| Year                |
+| Member 2            |
+| Member 3            |
+| Member 4            |
+| Selected Theme      |
+| Problem Statement   |
+| Solution            |
+| Technology Stack    |
+| GitHub              |
+| Portfolio           |
+| Registration Status |
+| Payment Status      |
+| Remarks             |
+
+### Registration Status
+
+Initially:
+
+**Pending**
+
+Possible later statuses:
+
+* Pending
+* Shortlisted
+* Selected
+* Rejected
+* Confirmed
+
+### Payment Status
+
+* Not Applicable
+* Pending
+* Paid
+* Verified
+
+---
+
+# 14. Registration Success Screen
+
+After submitting the form:
+
+# 🎉 REGISTRATION SUBMITTED!
+
+> Your HACKEX'26 Round 1 registration has been successfully submitted.
+
+Display:
+
+### Registration ID
+
+**HEX26-XXXX**
+
+Then:
+
+> Keep your Registration ID safe. The organising team will contact the team leader regarding further selection and event updates.
+
+Buttons:
+
+**DOWNLOAD / SAVE REGISTRATION**
+
+**BACK TO HOME**
+
+---
+
+# 15. Round Information
+
+Create two large cards.
+
+## ROUND 01
+
+### REGISTER IT FREE
+
+**FREE**
+
+Online submissions before the event.
+
+> Teams can submit their registration and initial idea online.
+
+### Important
+
+**Confirmation on 8–9 September**
+
+---
+
+## ROUND 02
+
+### SELECTED TEAMS
+
+**₹1,500 / TEAM**
+
+> Selected teams proceed to Round 2 after selection confirmation.
+
+### Payment
+
+**Payment after selection**
+
+---
+
+# 16. Prize Section
+
+# 🏆 PRIZE POOL
+
+## 🥇 1ST PRIZE
+
+# ₹20,000
+
+---
+
+## 🥈 2ND PRIZE
+
+# ₹15,000
+
+---
+
+## 🥉 3RD PRIZE
+
+# ₹10,000
+
+---
+
+### Total Prize Pool
+
+# ₹45,000
+
+Add animated trophy 3D objects.
+
+The trophies can slowly rotate and glow.
+
+---
+
+# 17. Participation Benefits
+
+### BUILD REAL-WORLD SOLUTIONS
+
+Transform your ideas into practical prototypes.
+
+### LEARN
+
+Gain hands-on experience through intense problem solving.
+
+### COLLABORATE
+
+Work with a team and develop your technical and communication skills.
+
+### WIN EXCITING PRIZES
+
+Compete for:
+
+**₹20,000 + ₹15,000 + ₹10,000**
+
+### CERTIFICATES
+
+Certificates for all participants.
+
+### NETWORK
+
+Connect with experts, mentors and fellow innovators.
+
+---
+
+# 18. 36-Hour Experience
+
+Create a large futuristic section:
+
+# 36 HOURS OF NON-STOP INNOVATION
+
+Display a circular 36-hour timer.
+
+Inside:
+
+**IDEATE**
+
+↓
+
+**DESIGN**
+
+↓
+
+**DEVELOP**
+
+↓
+
+**TEST**
+
+↓
+
+**PRESENT**
+
+↓
+
+**WIN**
+
+Background:
+
+* Digital clock
+* Code particles
+* Circuit lines
+* Animated progress ring
+
+---
+
+# 19. Event Timeline
+
+Use the confirmed poster information only.
+
+### 8–9 SEPTEMBER
+
+**Registration / Confirmation**
+
+### 25 SEPTEMBER
+
+**Hackathon Begins**
+
+### 36 HOURS
+
+**Non-stop Development**
+
+### 26 SEPTEMBER
+
+**Hackathon Ends / Final Presentation**
+
+For exact check-in, inauguration, judging and prize-distribution times, add them only after your organising team confirms them.
+
+---
+
+# 20. Rules & Guidelines
+
+Create a separate section.
+
+# HACKATHON RULES
+
+### Team
+
+* Maximum 4 members per team.
+* Teams should complete registration before the deadline.
+* Team details must be accurate.
+* One person should be designated as Team Leader.
+
+### Development
+
+* Teams must build their solution during the hackathon period according to the official rules.
+* Participants should follow the instructions provided by the organising committee.
+* Teams should be prepared to explain their solution and demonstrate their prototype.
+
+### Presentation
+
+Teams should be ready to present:
+
+1. Problem
+2. Proposed Solution
+3. Technology Used
+4. Working Prototype
+5. Innovation
+6. Impact
+7. Future Scope
+
+### Conduct
+
+* Participants must follow campus rules.
+* Respect organisers, mentors, judges and other participants.
+* Any form of misconduct may result in disqualification.
+
+**Note:** Add your official detailed rules here after the organising committee finalizes them.
+
+---
+
+# 21. Judging Criteria
+
+A professional hackathon website should have this section.
+
+# HOW WILL YOU BE JUDGED?
+
+### 💡 Innovation
+
+How original and creative is the solution?
+
+### 🎯 Problem Relevance
+
+How effectively does the solution address the selected problem?
+
+### ⚙️ Technical Implementation
+
+How well has the solution been developed?
+
+### 📈 Impact
+
+What real-world impact can the solution create?
+
+### 🎨 User Experience
+
+How usable, accessible and intuitive is the product?
+
+### 🚀 Scalability
+
+Can the solution grow and be implemented in real-world environments?
+
+---
+
+# 22. FAQ
+
+## Who can participate?
+
+Students interested in technology, innovation and problem solving can participate, subject to the final eligibility rules announced by the organising committee.
+
+## How many members can be in a team?
+
+Maximum **4 members per team**.
+
+## Is Round 1 registration free?
+
+Yes.
+
+### Round 1:
+
+**FREE**
+
+### Round 2:
+
+**₹1,500 per selected team**
+
+## Is the hackathon online?
+
+No.
+
+### Mode:
+
+**Offline — On Campus**
+
+## How long is the hackathon?
+
+**36 hours.**
+
+## When is HACKEX'26?
+
+**25–26 September 2026.**
+
+## What are the themes?
+
+* Healthcare
+* Edutech
+* Fintech
+* Industrial 5.0
+* Open Innovation
+
+## Will participants receive certificates?
+
+Yes. The poster states:
+
+**Certificates for all participants.**
+
+## What are the prizes?
+
+🥇 ₹20,000
+🥈 ₹15,000
+🥉 ₹10,000
+
+---
+
+# 23. Organising Team
+
+## FACULTY COORDINATORS
+
+### Dr. K. Geetha M.E., Ph.D
+
+Professor
+**9715250646**
+
+### Mr. E. Deepan Kumar M.E.
+
+Assistant Professor
+**99523 02646**
+
+---
+
+# STUDENT COORDINATORS
+
+### S. Akashresi
+
+IV-Year
+**8778528831**
+
+### S. Balachandran
+
+IV-Year
+**9342727360**
+
+---
+
+# 24. Contact Section
+
+# HAVE QUESTIONS?
+
+### 📧 Email
+
+**[hackex2026@gmail.com](mailto:hackex2026@gmail.com)**
+
+### 📱 Student Coordinator
+
+**S. Akashresi**
+8778528831
+
+### 📱 Student Coordinator
+
+**S. Balachandran**
+9342727360
+
+### 📷 Instagram
+
+**@excel_cse_official**
+
+---
+
+# 25. Social Media Section
+
+## FOLLOW THE JOURNEY
+
+> Stay connected with HACKEX'26 for announcements, updates, shortlisted teams, event moments and results.
+
+### Instagram
+
+**@excel_cse_official**
+
+### Email
+
+**[hackex2026@gmail.com](mailto:hackex2026@gmail.com)**
+
+Add:
+
+**Instagram →**
+
+---
+
+# 26. Final CTA
+
+Near the bottom:
+
+# READY TO BUILD THE FUTURE?
+
+### CODE.
+
+### COLLABORATE.
+
+### CREATE IMPACT.
+
+> Assemble your team. Choose your theme. Bring your idea. Build something extraordinary.
+
+### 🚀 REGISTER FOR HACKEX'26
+
+Under the button:
+
+**Round 1 Registration — FREE**
+
+---
+
+# 27. Footer
+
+### HACKEX'26
+
+**A NATIONAL LEVEL HACKATHON**
+
+Organised by:
+
+**TECHNO DEBUGGERS CLUB**
+
+&
+
+**DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING**
+
+**Excel Engineering College (Autonomous)**
+
+---
+
+### Quick Links
+
+Home
+About
+Themes
+Timeline
+Prizes
+Rules
+FAQ
+Register
+
+---
+
+### Contact
+
+📧 [hackex2026@gmail.com](mailto:hackex2026@gmail.com)
+📷 @excel_cse_official
+
+---
+
+# 28. Animation Plan
+
+The website should **not** animate everything aggressively. Keep it premium.
+
+### On page load
+
+Logo → fade in
+HACKEX'26 → letter-by-letter reveal
+Tagline → slide up
+Buttons → fade up
+3D laptop → floating animation
+
+### On scrolling
+
+Sections should reveal using:
+
+**Fade + Slide Up**
+
+Cards:
+
+**Scale 0.95 → 1**
+
+### Theme cards
+
+When mouse moves over:
+
+* Slight 3D tilt
+* Blue glow
+* Icon moves upward
+* Border becomes brighter
+
+### Prize cards
+
+Trophy:
+
+**Slow 360° rotation**
+
+Prize amount:
+
+**Counter animation**
+
+Example:
+
+`₹0 → ₹20,000`
+
+### Countdown
+
+Numbers should update every second.
+
+### Background
+
+Slowly moving:
+
+* Particles
+* Circuit lines
+* Blue glowing dots
+* Digital grid
+
+---
+
+# 29. 3D Objects to Use
+
+For the futuristic design, use these 3D elements:
+
+### Hero
+
+💻 Futuristic laptop
+
+### Healthcare
+
+❤️ 3D medical cross / heartbeat
+
+### Edutech
+
+🎓 3D graduation cap
+
+### Fintech
+
+₹ 3D digital rupee coin
+
+### Industrial 5.0
+
+🤖 3D robotic arm
+
+### Open Innovation
+
+💡 3D glowing light bulb
+
+### Prize
+
+🏆 3D trophy
+
+### Registration
+
+📋 3D digital form / holographic UI
+
+### Footer
+
+🌐 3D digital globe
+
+---
+
+# 30. User Experience Flow
+
+The complete user journey should be:
+
+**LAND ON WEBSITE**
+
+↓
+
+See **HACKEX'26**
+
+↓
+
+See countdown
+
+↓
+
+Understand hackathon
+
+↓
+
+Explore themes
+
+↓
+
+Check prizes
+
+↓
+
+Read rules
+
+↓
+
+Click **REGISTER NOW**
+
+↓
+
+Enter Team Details
+
+↓
+
+Enter Member Details
+
+↓
+
+Select Theme
+
+↓
+
+Submit Idea
+
+↓
+
+Submit Registration
+
+↓
+
+Generate Registration ID
+
+↓
+
+Show Success Screen
+
+↓
+
+Store information in **Google Sheet**
+
+↓
+
+Organising Team reviews registration
+
+↓
+
+Shortlist teams
+
+↓
+
+Contact selected teams
+
+↓
+
+Round 2 payment
+
+↓
+
+25–26 September
+
+↓
+
+**36-HOUR HACKATHON 🚀**
+
+---
+
+## Most important design direction
+
+Don't make it look like a normal college event website.
+
+Make the first screen feel like:
+
+**Apple-style clean UI + futuristic hackathon + blue cyber/technology aesthetic + 3D objects + professional event platform.**
+
+The poster should be the **design reference**, not something that is simply copied across every section. The website should take its **colors, typography, HACKEX'26 branding, event information and visual language** from the poster while giving visitors a modern interactive experience.
+Yes. For **HACKEX'26**, I would use a **futuristic blue-tech 3D style**, but not make every element 3D. The poster is already clean and professional, so the website should combine **2D motion + selective 3D + micro-interactions**.
+
+![Image](https://images.openai.com/static-rsc-4/GcuFbYb-4ngjv6BPwqhDbcVGCO33L6NIgB5KTd6HMbqS8OPYnkLIoCMxB7zZ6YOMdwIz-chTZFmajAZboHeS1OaRYJrYXtcwWGyf5oW8aLwwrnWrJiJeL-xOHgVC2Mym539p_W-uhYhkQFLkvIGnJndBOBKyTS976lmAd2W9VF0_-2_LHwwQFiRJABFjAuyF?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/ipMROtewSKsQnxK88GEXP5TUMu4a3_nObH8K8y6x1gWKW9WOod7jB4Vj2mm1TawNw5Amfh7bjTl7yN82uGP_i_okzf0P1cz9j0naGk0baX86h7dT0_BpWIU1iw5DLWmKnUGljQcS1XQTAYos26SlZKl1iqTwYA_2dVOeU6Imf4j0-_DCs3CHB8XsSyzJ3erK?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/KlhJenjDBaO7VN4CXUPWJEEfUx6efdHi9CJHAb2MGhYbqoYfXJB0fBLNpi9y1hNpCWLqMUduXbEBOQdlNEd-xbqEwV8MFJ55hc2K3SXLNVbGwr5bmbGHkx9XFdt9CSpRHVn2aNXrsI1JymBDC3qe-b8rM9NW_DoEEKTkXV8ns83M_FDoC51OKiE8Zo_T5BpX?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/9nI5-O1d5bFhGt7LlAFbL0Rcbe_CSdGNuCMh3YAI5KtVy3Sc83jOBsk0Hgtyyx5RbB3gL-obpLVZdom--fur3HHWY6dow1LWhBsLPijLNFWRqMaI27pYiOU1tLdM7FK6Hrjkn49EWT_9oDlwfT2yhtPlSRbQ7OlWdkrzQH5nzPydZowSIh1Msfo-rWeoLiu9?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/NlmeI7pa1iTMg867WQEGsiYeR2TWSEsG4GEL19FPvKdwsDeHxbg9fUTrrc6_wcX8-iopikiJFXst4BOdgAayq-ELdlbuwUL-jMeRT7qKgqGF3WrcellRn4gEdO5L9VAAFjYeDYQ0QJtcqa7rxHD9tEdY-D11e3cGG0S6eHX3pjmQZ8IY8SbaDPfcFY97VhZu?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/9mz4x0AfzxuxPFKC_DYom7z2u0Jv4BQ94DjxVW0vw8BPNMI1qYQ3H_1sPjmBOA0WBz0uxDdU6FW5TIFzDbh04JXca6T4-xLtRJjW_wCJUf3oFvD0cSvVjMXzEAYmXaKq4rlO7GB90e5QK3yM0g4kRRb3Wz9TKunDK2_9nQ7Id_-f-T6LX-WGUO7MAM47YdWk?purpose=fullsize)
+
+# 🚀 HACKEX'26 — Recommended Animation & 3D System
+
+## 1. Overall visual style
+
+Use this exact combination:
+
+**Futuristic Tech + 3D Holographic + Clean Corporate + Blue Cyber Interface**
+
+Not full cyberpunk.
+
+Avoid:
+
+* ❌ Too much neon
+* ❌ Black-heavy cyberpunk
+* ❌ Excessive glitch
+* ❌ Too many spinning objects
+* ❌ Random animations
+
+Instead:
+
+**White + Navy + Royal Blue + Electric Blue glow + Glassmorphism + 3D**
+
+This will match your poster much better.
+
+---
+
+# 2. HERO — Main 3D Animation
+
+This should be your **biggest visual attraction**.
+
+### Main 3D object
+
+Use a:
+
+## 💻 Futuristic 3D Laptop
+
+The laptop screen displays:
+
+```text
+HACKEX'26
+> CODE
+> COLLABORATE
+> CREATE
+> IMPACT
+```
+
+Around it:
+
+* `</>` coding symbol
+* AI brain
+* Light bulb
+* Database
+* Cloud
+* GitHub-style nodes
+* Circuit board
+* Floating blue particles
+
+### Animation
+
+Use:
+
+**Floating + slow rotation + mouse parallax**
+
+The laptop should continuously:
+
+↗ move up
+↘ move down
+↗ move up
+
+Very slowly.
+
+### Mouse interaction
+
+When the user moves the mouse:
+
+* Laptop slightly rotates toward cursor
+* 3D objects shift at different speeds
+* Background particles respond slightly
+
+This gives a **premium interactive feel**.
+
+---
+
+# 3. HACKEX'26 Logo Animation
+
+Don't immediately show:
+
+**HACKEX'26**
+
+Instead:
+
+### Animation sequence
+
+**H → HA → HAC → HACK → HACKEX → HACKEX'26**
+
+Then the X gets a special animation.
+
+The **X** can have:
+
+* Blue energy streak
+* Light trail
+* Small particle explosion
+
+Then:
+
+### CODE. COLLABORATE. CREATE IMPACT.
+
+appears underneath.
+
+This should happen **only when the page first loads**.
+
+---
+
+# 4. Circuit Animation
+
+Your poster already has circuit patterns.
+
+Use that heavily on the website.
+
+### Animation
+
+Small blue light particles travel through circuit paths:
+
+**● → → → ● → → →**
+
+This creates the feeling that the website is "powered by technology."
+
+Use this in:
+
+* Hero
+* Theme section
+* Timeline
+* Footer
+
+Keep it subtle.
+
+---
+
+# 5. Background Animation
+
+Use a very light:
+
+## Digital Grid
+
+Background:
+
+```text
++---+---+---+---+
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
++---+---+---+---+
+```
+
+The grid slowly moves upward.
+
+Add small floating particles:
+
+**•  •    •       •**
+
+Some particles connect with thin lines.
+
+This creates a **digital network effect**.
+
+---
+
+# 6. 3D Theme Cards
+
+This is one of the most important sections.
+
+Instead of ordinary cards:
+
+### ❤️ HEALTHCARE
+
+### 🎓 EDUTECH
+
+### ₹ FINTECH
+
+### 🏭 INDUSTRIAL 5.0
+
+### 💡 OPEN INNOVATION
+
+Give each one a **3D object**.
+
+---
+
+## ❤️ Healthcare
+
+### 3D Object
+
+A transparent medical heart / medical cross.
+
+Inside:
+
+* heartbeat line
+* small glowing particles
+
+### Animation
+
+Heartbeat:
+
+**lub → lub → pause → lub → lub**
+
+Card hover:
+
+3D heart slightly rotates toward the mouse.
+
+---
+
+# 7. Edutech 3D
+
+### 3D Object
+
+Floating:
+
+🎓 Graduation cap
+
+surrounded by:
+
+* books
+* AI symbols
+* learning nodes
+* small holographic screens
+
+### Animation
+
+Cap slowly rotates.
+
+When hovering:
+
+The books open slightly and small particles rise.
+
+---
+
+# 8. Fintech 3D
+
+### 3D Object
+
+A large:
+
+## ₹ Digital Coin
+
+Make the coin metallic/glass-like blue.
+
+Around it:
+
+* ₹
+* payment symbols
+* graph
+* digital numbers
+
+### Animation
+
+Coin:
+
+**slow 360° rotation**
+
+On hover:
+
+Coin rotates faster.
+
+---
+
+# 9. Industrial 5.0 3D
+
+This can be one of the best sections.
+
+### 3D Object
+
+## 🤖 Robotic Arm
+
+Place a futuristic robotic arm inside a mini digital factory.
+
+Add:
+
+* conveyor belt
+* IoT nodes
+* sensors
+* circuit lines
+* AI hologram
+
+### Animation
+
+Robotic arm:
+
+**move → pick → rotate → place**
+
+Very slow.
+
+Don't make it constantly move quickly.
+
+---
+
+# 10. Open Innovation 3D
+
+### Main object
+
+## 💡 Glowing 3D Light Bulb
+
+Inside the bulb:
+
+* `AI`
+* `CODE`
+* `IDEA`
+* `CREATE`
+
+Floating around it:
+
+* `</>`
+* AI
+* cloud
+* mobile
+* IoT
+* blockchain
+
+### Animation
+
+Light bulb slowly rotates.
+
+Every few seconds:
+
+**Glow → brighten → glow**
+
+---
+
+# 11. Scroll Animation
+
+Every section should appear as the user scrolls.
+
+### Example
+
+User scrolls:
+
+**About**
+
+Card starts:
+
+`opacity 0 + Y 50px`
+
+Then:
+
+`opacity 1 + Y 0`
+
+Result:
+
+The section smoothly rises into view.
+
+Use this for:
+
+* About
+* Themes
+* Timeline
+* Prizes
+* Rules
+* FAQ
+* Registration
+
+---
+
+# 12. 3D Card Tilt
+
+This is a **must-have**.
+
+When the mouse moves over a card:
+
+```text
+        Mouse →
+             ______
+           /      /
+          /______/
+```
+
+The card slightly tilts.
+
+For example:
+
+**Healthcare**
+
+Mouse left:
+
+Card tilts left.
+
+Mouse right:
+
+Card tilts right.
+
+Mouse top:
+
+Card tilts backward.
+
+Mouse bottom:
+
+Card tilts forward.
+
+Keep it around **5–8° maximum**.
+
+Don't overdo it.
+
+---
+
+# 13. Glassmorphism
+
+Use transparent cards.
+
+Example:
+
+**rgba white + blur + blue border**
+
+Cards should look like:
+
+### ┌─────────────────────┐
+
+### │  💡 OPEN INNOVATION │
+
+### │                     │
+
+### │  Bring your idea    │
+
+### │  to life...         │
+
+### └─────────────────────┘
+
+With:
+
+* Blur
+* Transparency
+* Soft shadow
+* Blue border
+* Blue glow on hover
+
+---
+
+# 14. Countdown Animation
+
+Create:
+
+# HACKATHON STARTS IN
+
+Then:
+
+### 38 : 12 : 42 : 17
+
+**DAYS | HOURS | MINUTES | SECONDS**
+
+Use a digital futuristic style.
+
+When one second changes:
+
+The number should briefly:
+
+**scale 1 → 1.08 → 1**
+
+Don't use excessive effects.
+
+---
+
+# 15. Prize Animation
+
+This should be visually strong.
+
+![Image](https://images.openai.com/static-rsc-4/LHtVZAYJfPhShPegeVinTrWUj743ucpljIViAw1Bgm6FHQxnL1CRAXXdy-mNvuVFY0e7HldYowmHK6MJt26aUJtqJWJMDeyZGPPRd_wlm-T01xiLe3C5LmiyZdGfjTS0ljbghf-yKoDBvfrwEmFORCI5fpcIWMMfozxj-h4evo096Bqhwzu9TjEsu7fZnARt?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/0YtEhmcNg8L7c00sIt5YijuHEZe1hBwCc552jq8EyA3Z6ro3KZVMwQV10cltHybDTd7eP6o6wPCiS1xeO4iBP0CjexAIXaCkO-CiQwjcc7feZ5LJEVBqsEx-VoNv9dyp7lB2I3leoowMDSoinFqdBagZ7U07dE-hHD2kD0tSTsh3Eu3cvtpcwHRQ5wBqP_nI?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/wdpNVj8yU_D-1TF9wr5LEZRQuBut4BAq9GjBcI7m-COGWGqhyYPiBmbXsT--MVgt7f1KbbQ-OyROLq6byyl2ZrPQosYHMr7IOfG29sz1EH6iTR7krtfeMv6CoWih1Z6vWo6sQSSPs_xfqHbqtxs7Utrb_iFFUf6Zyqif9h7MNso61K3mBrZOiXD6OEqg7TFr?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/TBliCJJGLdyXca7Nxl7wiVdAvBEU2Pj4hCX39npENqhzqcI2pK6tKfNIdNSPaW_azf6LJ5Rv-vz-s_O-40GS4hQTjFCVpG7O6YnY8viDnjInh9rC0FoukCcSvJm4TEkSb45vOeN3rVf9sQbD0mYmvt7beaA8FWhOPgOr4fETtjDUzjigJAE6_WtOf-ohDsMG?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/KFo1iooV6iUWeDHgBzRxEJ-Q2i2UmvJ5tppQKPR5-XQoHDViLn58TaWi1PCyOED6cYhx24PVcl8ZS46jPbTqS5roRX-O5gp62vwrQ_znXb4UpNj0-VXqFWkWqhHEVhNG2JjbbUDJmxSGtukyOLkuNJSRdiKIEA6Kd0OvgeHOZoKL9Q7mMvd8buv5pRmEobXx?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/FdXHQEBSJqLLAnkBoj9fvC7aWV_onZMTA6aaCOMVxJFYHnkMjM5lWaFEJh1cCiSwF0D-3C8DlNiZ7x0GwcsjQqTKpzSWHfavdKwZwYUN5yJ1gLSqVUsqHNE9MQ6DgtJ5Jc8_obr2Ugiizz-r4lnT0lbEIGJgUPRc1Hw9F4oT_rd6HBIvMT6JaGUfjQbHmD5U?purpose=fullsize)
+
+Use three 3D trophies:
+
+### 🥇 1st
+
+**₹20,000**
+
+### 🥈 2nd
+
+**₹15,000**
+
+### 🥉 3rd
+
+**₹10,000**
+
+### Animation
+
+Trophy:
+
+**Floating + slow rotation**
+
+Prize:
+
+**₹0 → ₹20,000**
+
+The numbers count upward when the section enters the screen.
+
+---
+
+# 16. 36-Hour Animation
+
+This can become a signature section.
+
+### Main object
+
+## ⏱️ 36 HOURS
+
+Create a huge circular digital timer.
+
+Around the circle:
+
+**IDEATE → DESIGN → DEVELOP → TEST → PRESENT**
+
+The ring slowly progresses.
+
+### Center:
+
+# 36
+
+**HOURS**
+
+Use a blue glowing ring.
+
+---
+
+# 17. Timeline Animation
+
+Create a horizontal/vertical futuristic timeline:
+
+**REGISTER**
+
+↓
+
+**SUBMIT IDEA**
+
+↓
+
+**SELECTION**
+
+↓
+
+**ROUND 2**
+
+↓
+
+**36-HOUR HACK**
+
+↓
+
+**PRESENTATION**
+
+↓
+
+**WIN**
+
+As the user scrolls, a blue line travels through the timeline.
+
+This is much better than static boxes.
+
+---
+
+# 18. Registration Form Animation
+
+Don't show a huge boring form immediately.
+
+Use a **multi-step registration experience**.
+
+### Step 01
+
+## TEAM
+
+Team Name
+Team Size
+Team Leader
+
+↓
+
+### Step 02
+
+## MEMBERS
+
+Member 2
+Member 3
+Member 4
+
+↓
+
+### Step 03
+
+## COLLEGE
+
+College
+Department
+Year
+
+↓
+
+### Step 04
+
+## IDEA
+
+Theme
+Problem Statement
+Solution
+Technology
+
+↓
+
+### Step 05
+
+## CONFIRM
+
+Review details
+
+↓
+
+### 🚀 SUBMIT
+
+This feels much more professional.
+
+---
+
+# 19. Registration Success Animation
+
+After submission:
+
+Screen becomes slightly dark/blurred.
+
+Then:
+
+### 🚀
+
+A glowing blue ring appears.
+
+Then:
+
+# REGISTRATION SUCCESSFUL!
+
+Then:
+
+### HACKEX26-0042
+
+Your Registration ID.
+
+Then small particle burst.
+
+This gives the user a satisfying completion experience.
+
+---
+
+# 20. Button Animation
+
+Don't use boring buttons.
+
+For example:
+
+### 🚀 REGISTER NOW
+
+On hover:
+
+* Blue gradient moves
+* Arrow moves right
+* Glow appears
+* Button slightly rises
+
+Animation:
+
+**translateY(-3px)**
+
+Don't make the button continuously bounce.
+
+---
+
+# 21. Text Animation
+
+Use text animations only for important headings.
+
+### Example
+
+# BUILD.
+
+Then:
+
+# THINK.
+
+Then:
+
+# INNOVATE.
+
+Each word appears separately.
+
+Finally:
+
+### INNOVATE TODAY. IMPACT TOMORROW.
+
+This can become one of the best sections.
+
+---
+
+# 22. Glitch Animation
+
+You **can use glitch**, but very little.
+
+Use it only for:
+
+**HACKEX'26**
+
+Maybe once during page loading.
+
+Example:
+
+```text
+HACKEX'26
+HACKEX'26
+HACKEX'26
+```
+
+with a tiny RGB split.
+
+### Don't use glitch everywhere.
+
+Otherwise it will look cheap.
+
+---
+
+# 23. Particle Explosion
+
+Use particle effects at important moments.
+
+For example:
+
+When user clicks:
+
+**REGISTER NOW**
+
+Small blue particles can move outward.
+
+When registration succeeds:
+
+**100–200 tiny blue particles**
+
+burst around the success icon.
+
+---
+
+# 24. Cursor Effect
+
+Desktop version can have a custom cursor.
+
+Normal:
+
+**small blue dot**
+
+Hover over interactive element:
+
+**circle expands**
+
+For example:
+
+Normal:
+
+`•`
+
+Hover:
+
+`◉`
+
+But don't make the cursor too large.
+
+---
+
+# 25. Magnetic Buttons
+
+This is a premium interaction.
+
+When cursor gets close to:
+
+### REGISTER NOW
+
+The button slightly moves toward the cursor.
+
+It feels like the button is "magnetic."
+
+Use only on major CTA buttons.
+
+---
+
+# 26. 3D Hero Camera Movement
+
+For the main hero:
+
+Mouse movement controls the 3D scene.
+
+Move mouse right:
+
+**camera moves slightly right**
+
+Move mouse left:
+
+**camera moves slightly left**
+
+Move mouse up:
+
+**camera moves slightly up**
+
+This creates a **3D depth effect**.
+
+---
+
+# 27. Parallax Animation
+
+Use multiple layers.
+
+### Layer 1
+
+Background grid
+
+### Layer 2
+
+Circuit lines
+
+### Layer 3
+
+Particles
+
+### Layer 4
+
+3D laptop
+
+### Layer 5
+
+Floating icons
+
+Each moves at a different speed.
+
+Result:
+
+## Deep 3D feeling without overwhelming the user.
+
+---
+
+# 28. Loading Screen
+
+Create a short loading animation.
+
+White background.
+
+Center:
+
+# HACKEX'26
+
+Underneath:
+
+**INITIALIZING INNOVATION...**
+
+Then a progress bar:
+
+`██████████████████ 100%`
+
+Then:
+
+**ENTER THE HACK**
+
+Transition into homepage.
+
+Keep this around **1–2 seconds**, not longer.
+
+---
+
+# 29. Mobile Animation
+
+Important: Don't use the same heavy 3D experience on mobile.
+
+Mobile should use:
+
+* Lightweight 3D
+* Smaller particles
+* Reduced background effects
+* No heavy mouse interactions
+* Touch-friendly cards
+* Smooth scroll animations
+
+The website should remain fast.
+
+---
+
+# 30. Recommended Animation Stack
+
+If you're giving this specification to a developer, I recommend:
+
+### 3D
+
+**Three.js**
+
+for:
+
+* Laptop
+* Robot
+* Trophy
+* Floating objects
+* Particles
+* 3D environment
+
+### Easier 3D alternative
+
+**Spline**
+
+Good if you want designers to create/edit the 3D scenes visually.
+
+### Animation
+
+**GSAP**
+
+Use for:
+
+* Hero animations
+* Scroll animations
+* Timeline
+* Text reveal
+* Counters
+* Parallax
+
+### UI animation
+
+**Framer Motion**
+
+Use for:
+
+* Cards
+* Buttons
+* Page transitions
+* Form steps
+* Modals
+
+### Lightweight animations
+
+**Lottie**
+
+Use for:
+
+* Success animation
+* Loading
+* Icons
+* Small illustrations
+
+---
+
+# 31. Exact Animation Priority
+
+Don't build everything at once.
+
+### 🔥 MUST HAVE
+
+1. Hero 3D laptop
+2. HACKEX'26 text reveal
+3. Floating animation
+4. Scroll reveal
+5. Theme card 3D tilt
+6. Countdown
+7. Prize counter
+8. Timeline animation
+9. Registration multi-step animation
+10. Registration success animation
+
+### ⭐ SHOULD HAVE
+
+11. Circuit animation
+12. Particle background
+13. Parallax
+14. Magnetic Register button
+15. Trophy animation
+16. 36-hour circular timer
+17. Theme-specific 3D objects
+
+### ✨ OPTIONAL
+
+18. Glitch effect
+19. Custom cursor
+20. Particle explosion
+21. Holographic effects
+22. Advanced camera movement
+
+---
+
+# 32. The Final Look I Recommend
+
+Imagine the homepage like this:
+
+```text
+┌────────────────────────────────────────────────────┐
+│ HACKEX'26    ABOUT THEMES PRIZES FAQ   REGISTER 🚀 │
+├────────────────────────────────────────────────────┤
+│                                                    │
+│  NATIONAL LEVEL HACKATHON                          │
+│                                                    │
+│  HACKEX'26                    💻                   │
+│                              /██\                  │
+│  CODE.                     / LAPTOP\               │
+│  COLLABORATE.              ──────────              │
+│  CREATE IMPACT.             </>   💡              │
+│                                                    │
+│  25–26 SEPTEMBER 2026                              │
+│                                                    │
+│  [ 🚀 REGISTER NOW ]                               │
+│                                                    │
+│  • circuit animation • particles • digital grid   │
+└────────────────────────────────────────────────────┘
+
+                     ↓
+
+              COUNTDOWN
+       38 : 12 : 42 : 17
+
+                     ↓
+
+              WHAT IS HACKEX'26?
+
+                     ↓
+
+        ❤️       🎓       ₹       🤖       💡
+      HEALTH   EDUTECH  FINTECH  IND.5.0  OPEN
+      [3D]      [3D]     [3D]     [3D]     [3D]
+
+                     ↓
+
+             36 HOURS OF HACKING
+
+                     ↓
+
+       REGISTER → SELECT → HACK → WIN
+
+                     ↓
+
+                🏆 PRIZES
+
+          ₹20K    ₹15K    ₹10K
+
+                     ↓
+
+             REGISTER YOUR TEAM
+
+          [STEP 1] [STEP 2] [STEP 3]
+
+                     ↓
+
+           🎉 REGISTRATION SUCCESS
+
+                     ↓
+
+              BUILD. THINK.
+                 INNOVATE.
+
+           INNOVATE TODAY.
+           IMPACT TOMORROW.
+```
+
+## ⭐ My strongest recommendation
+
+For your particular poster, I would choose this combination:
+
+**3D Laptop + holographic code objects + blue circuit particles + glassmorphism + scroll-triggered GSAP animations + 3D theme cards + animated countdown + 3D trophies + multi-step registration.**
+
+That gives HACKEX'26 a **premium national-hackathon feel** while still staying faithful to your existing poster instead of making it look like an unrelated cyberpunk website.
