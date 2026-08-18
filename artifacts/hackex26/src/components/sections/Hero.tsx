@@ -46,10 +46,10 @@ export function Hero() {
               <a href="#about" className="button-secondary" data-testid="button-hero-explore">Explore HACKEX’26 <ArrowRight size={15} /></a>
             </div>
             <div className="hero-facts">
-              <div className="fact"><b>25–26</b><span>September<br />2026</span></div>
-              <div className="fact"><b>36 hrs</b><span>Non-stop<br />build</span></div>
-              <div className="fact"><b>4</b><span>Members<br />per team</span></div>
-              <div className="fact"><b>Offline</b><span>On campus<br />Excel EEC</span></div>
+              <div className="fact"><b>Round 1</b><span>Free PPT<br />Submission</span></div>
+              <div className="fact"><b>8–9 Sep</b><span>Confirmation<br />Date</span></div>
+              <div className="fact"><b>25–26 Sep</b><span>36-Hour Offline<br />Hackathon</span></div>
+              <div className="fact"><b>₹1,500</b><span>Per Team<br />After Selection</span></div>
             </div>
           </div>
           <div ref={artRef} className="hero-art" aria-label="Illustration of a coding laptop">

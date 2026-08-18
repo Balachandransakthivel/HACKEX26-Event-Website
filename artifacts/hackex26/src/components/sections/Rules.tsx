@@ -3,12 +3,12 @@ import { SectionHeading } from '@/components/ui/SectionHeading';
 
 export function Rules() {
   const rules = [
-    ['01', 'Who can participate', 'Open to students from institutions across India. Every team member must carry valid student identification.'],
-    ['02', 'Team composition', 'Teams must have up to 4 members. One person can be the leader; each member should contribute meaningfully.'],
-    ['03', 'Build on site', 'HACKEX’26 is an offline, on-campus event. Teams are expected to be present for the full 36-hour experience.'],
-    ['04', 'Original work', 'Build something new during the event. Existing libraries and APIs are welcome; copied projects are not.'],
-    ['05', 'Respect the room', 'Keep the space safe, inclusive and constructive. The organisers’ decision on eligibility is final.'],
-    ['06', 'Round 2 payment', 'Only selected teams pay ₹1,500 after confirmation. Round 1 registration is completely free.'],
+    ['01', 'Round 1 Submission', 'Round 1 registration is 100% FREE. Submit your project idea and upload your project PPT online before the deadline.'],
+    ['02', 'Selection Confirmation', 'Shortlisted teams will receive confirmation on 8–9 September 2026 with next-step instructions.'],
+    ['03', 'Round 2 Payment', 'Selected teams pay ₹1,500 per team ONLY AFTER selection in Round 1.'],
+    ['04', 'On-The-Spot Problem Statement', 'Themes are selected during Round 2, and exact problem statements are revealed ON THE SPOT at kickoff!'],
+    ['05', 'Offline Venue', 'Round 2 is a 36-hour offline event at Excel Engineering College campus on 25 & 26 September.'],
+    ['06', 'Original Work & Identity', 'Open to college students with valid IDs. All builds must be original work created during the 36-hour window.'],
   ];
   return (
     <section className="section rules" id="rules">

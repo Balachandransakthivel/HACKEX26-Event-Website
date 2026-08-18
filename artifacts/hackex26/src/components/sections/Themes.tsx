@@ -20,7 +20,12 @@ export function Themes() {
             </Reveal>
           ))}
         </div>
-        <div className="theme-note"><span>Theme selection happens during registration. Open Innovation is for ideas that refuse to sit still.</span><span className="mono">[ NO WRONG STARTING POINT ]</span></div>
+        <div className="theme-note">
+          <span>
+            <strong>Special Feature:</strong> Themes will be selected during Round 2, and the exact <strong>Problem Statement will be revealed ON THE SPOT!</strong>
+          </span>
+          <span className="mono">[ ON THE SPOT REVEAL ]</span>
+        </div>
       </div>
     </section>
   );

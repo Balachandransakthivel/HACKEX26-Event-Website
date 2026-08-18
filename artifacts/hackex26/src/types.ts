@@ -15,6 +15,7 @@ export type FormState = {
   solution: string;
   technology: string;
   portfolio: string;
+  pptUrl: string;
 };
 
 export type Registration = FormState & {
@@ -22,3 +23,4 @@ export type Registration = FormState & {
   submittedAt: string;
   remoteSubmitted: boolean;
 };
+

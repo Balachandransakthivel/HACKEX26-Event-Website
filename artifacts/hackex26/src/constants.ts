@@ -35,4 +35,5 @@ export const initialForm: FormState = {
   solution: '',
   technology: '',
   portfolio: '',
+  pptUrl: '',
 };

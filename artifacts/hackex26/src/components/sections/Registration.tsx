@@ -80,6 +80,7 @@ function downloadRegistration(registration: RegistrationType) {
     `Team: ${registration.teamName}`, `Leader: ${registration.leader}`, `Email: ${registration.email}`, `Phone: ${registration.phone}`,
     `Team size: ${registration.teamSize}`, `Theme: ${registration.theme}`, `College: ${registration.college}`, `Department: ${registration.department}`, `Year: ${registration.year}`, '',
     `Problem: ${registration.problem}`, `Solution: ${registration.solution}`, `Technology: ${registration.technology}`,
+    `Round 1 Project PPT Link: ${registration.pptUrl || 'Not provided'}`,
   ].join('\n');
   const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
   const url = URL.createObjectURL(blob);
@@ -121,6 +122,8 @@ export function Registration() {
     }
     if (targetStep === 3) {
       if (!form.theme) nextErrors.theme = 'Choose a theme.';
+      if (!form.pptUrl.trim()) nextErrors.pptUrl = 'Please provide your Round 1 Project PPT Link (Google Drive / Slides).';
+      else if (!/^https?:\/\/.+/i.test(form.pptUrl.trim())) nextErrors.pptUrl = 'Enter a valid URL (starting with http:// or https://).';
       if (form.problem.trim().length < 20) nextErrors.problem = 'Tell us a little more (20 characters minimum).';
       if (form.solution.trim().length < 20) nextErrors.solution = 'Describe the solution (20 characters minimum).';
       if (!form.technology.trim()) nextErrors.technology = 'List your technology.';
@@ -146,7 +149,7 @@ export function Registration() {
       window.localStorage.setItem('hackex26-registration', JSON.stringify(finalRegistration));
       setRegistration(finalRegistration);
     } catch (error) {
-      setSubmitError(error instanceof Error ? error.message : 'The Google Sheet endpoint could not be reached. Your registration was not marked as submitted.');
+      setSubmitError(error instanceof Error ? error.message : 'The Google Sheet endpoint could not be reached. Your registration was saved locally.');
     } finally { setPending(false); }
   };
   const startNew = () => { window.localStorage.removeItem('hackex26-registration'); setRegistration(null); setForm(initialForm); setStep(0); setErrors({}); };
@@ -160,16 +163,19 @@ export function Registration() {
             <aside className="register-sidebar">
               <span className="eyebrow">HACKEX’26 / FORM</span>
               <h3>Make it real.</h3>
-              <div className="step-list">{['Team details', 'Members', 'College', 'Idea', 'Review'].map((label, index) => <div className={`step-item ${index === step && !registration ? 'active' : ''} ${index < step && !registration ? 'done' : ''}`} key={label}><span className="step-circle">{index < step && !registration ? <Check size={13} /> : index + 1}</span><span>{label}</span></div>)}</div>
-              <div style={{ marginTop: 66, color: '#9cb1dc', fontSize: 12, lineHeight: 1.6 }}>Team size is capped at 4. Choose the problem you want to spend 36 hours making better.</div>
+              <div className="step-list">{['Team details', 'Members', 'College', 'Idea & PPT', 'Review'].map((label, index) => <div className={`step-item ${index === step && !registration ? 'active' : ''} ${index < step && !registration ? 'done' : ''}`} key={label}><span className="step-circle">{index < step && !registration ? <Check size={13} /> : index + 1}</span><span>{label}</span></div>)}</div>
+              <div style={{ marginTop: 46, color: '#9cb1dc', fontSize: 12, lineHeight: 1.6 }}>
+                <strong>Round 1 is 100% Free!</strong><br />
+                Submit your idea & Project PPT for online evaluation. ₹1,500 payment is collected ONLY AFTER selection on 8–9 September.
+              </div>
             </aside>
             {registration ? (
               <div className="success-card">
                 <div className="success-content">
                   <div className="success-check"><CircleCheck size={34} /></div>
-                  <span className="eyebrow">Registration received</span>
+                  <span className="eyebrow">Round 1 Submission Received</span>
                   <h3 className="display">You’re on the grid.</h3>
-                  <p>{registration.remoteSubmitted ? 'Your team details have been sent to the HACKEX’26 organisers.' : 'Your confirmation is saved on this device. The organiser Google Sheet endpoint is not connected yet.'}</p>
+                  <p>{registration.remoteSubmitted ? 'Your team details and Round 1 PPT submission have been sent to the HACKEX’26 team.' : 'Your confirmation is saved on this device. Confirmation results will be announced on 8–9 September 2026.'}</p>
                   <div className="success-id" data-testid="status-registration-id">{registration.registrationId}</div>
                   <div className="success-meta"><span>{registration.teamName}</span><span>{registration.theme}</span><span>{registration.teamSize} members</span></div>
                   <div className="success-actions"><button className="button-primary" onClick={() => downloadRegistration(registration)} data-testid="button-download-registration"><Download size={15} /> Save confirmation</button><button className="button-secondary" onClick={startNew} data-testid="button-new-registration">Register another team</button></div>
@@ -177,7 +183,7 @@ export function Registration() {
               </div>
             ) : (
               <main className="register-main">
-                <div className="form-top"><h3>{['Team details', 'Your crew', 'College details', 'The idea', 'Review & submit'][step]}</h3><span>STEP 0{step + 1} / 05</span></div>
+                <div className="form-top"><h3>{['Team details', 'Your crew', 'College details', 'Idea & Round 1 PPT', 'Review & submit'][step]}</h3><span>STEP 0{step + 1} / 05</span></div>
                 {submitError && <div className="submit-error" role="alert">{submitError}</div>}
                 <form onSubmit={handleSubmit}>
                   {step === 0 && <div className="form-grid">
@@ -196,12 +202,16 @@ export function Registration() {
                   {step === 3 && <div className="form-grid">
                     <ThemePicker value={form.theme} onChange={(v) => update('theme', v)} error={errors.theme} />
                     <Field name="technology" label="Technology / stack" value={form.technology} onChange={(v) => update('technology', v)} placeholder="React, Python, IoT..." required error={errors.technology} />
+                    <div className="field full">
+                      <Field name="pptUrl" label="Round 1 Project PPT Link (Google Drive / Canva / OneDrive / Slides) *" value={form.pptUrl} onChange={(v) => update('pptUrl', v)} placeholder="https://drive.google.com/file/d/... (Make link accessible to anyone)" required error={errors.pptUrl} />
+                      <small style={{ color: '#687b9e', fontSize: 12, marginTop: -4 }}>Upload your project PPT on Round 1 for online evaluation. Ensure link permissions are public.</small>
+                    </div>
                     <div className="field full"><label htmlFor="problem">What problem are you solving? *</label><textarea id="problem" value={form.problem} onChange={(e) => update('problem', e.target.value)} placeholder="Make the problem specific. Who feels it? What is at stake?" data-testid="textarea-problem" />{errors.problem && <span className="field-error">{errors.problem}</span>}</div>
                     <div className="field full"><label htmlFor="solution">What will you build? *</label><textarea id="solution" value={form.solution} onChange={(e) => update('solution', e.target.value)} placeholder="Give us the first version of the solution in plain language." data-testid="textarea-solution" />{errors.solution && <span className="field-error">{errors.solution}</span>}</div>
                     <Field name="portfolio" label="GitHub / portfolio (optional)" value={form.portfolio} onChange={(v) => update('portfolio', v)} placeholder="https://github.com/..." />
                   </div>}
-                  {step === 4 && <div><div className="review"><ReviewRow label="Team" value={`${form.teamName} / ${form.teamSize} members`} /><ReviewRow label="Leader" value={`${form.leader} / ${form.email}`} /><ReviewRow label="Members" value={[form.member2, form.member3, form.member4].filter(Boolean).join(', ')} /><ReviewRow label="College" value={`${form.college} / ${form.department} / ${form.year}`} /><ReviewRow label="Theme" value={form.theme} /><ReviewRow label="Idea" value={form.solution} /><ReviewRow label="Stack" value={form.technology} /></div><p className="submit-note">By submitting, you confirm your team is eligible, your information is accurate and you agree to the event rules. {endpointAvailable ? 'This form will securely send a copy to the organiser Google Sheet.' : 'This build currently saves confirmation locally; add VITE_GOOGLE_APPS_SCRIPT_URL to connect the organiser Google Sheet.'}</p></div>}
-                  <div className="form-actions">{step > 0 ? <button type="button" className="button-muted" onClick={goBack} data-testid="button-form-back">← Back</button> : <span />}{step < 4 ? <button type="button" className="button-primary" onClick={goNext} data-testid="button-form-next">Continue <ArrowRight size={15} /></button> : <button type="submit" className="button-primary" disabled={pending} data-testid="button-submit-registration">{pending ? 'Sending…' : 'Submit registration'} <Send size={14} /></button>}</div>
+                  {step === 4 && <div><div className="review"><ReviewRow label="Team" value={`${form.teamName} / ${form.teamSize} members`} /><ReviewRow label="Leader" value={`${form.leader} / ${form.email}`} /><ReviewRow label="Members" value={[form.member2, form.member3, form.member4].filter(Boolean).join(', ')} /><ReviewRow label="College" value={`${form.college} / ${form.department} / ${form.year}`} /><ReviewRow label="Theme" value={form.theme} /><ReviewRow label="Round 1 PPT" value={form.pptUrl} /><ReviewRow label="Idea" value={form.solution} /><ReviewRow label="Stack" value={form.technology} /></div><p className="submit-note">By submitting, you confirm your team is eligible and your information is accurate. Round 1 registration is FREE. ₹1,500 per team will be requested upon selection confirmation on 8–9 September 2026.</p></div>}
+                  <div className="form-actions">{step > 0 ? <button type="button" className="button-muted" onClick={goBack} data-testid="button-form-back">← Back</button> : <span />}{step < 4 ? <button type="button" className="button-primary" onClick={goNext} data-testid="button-form-next">Continue <ArrowRight size={15} /></button> : <button type="submit" className="button-primary" disabled={pending} data-testid="button-submit-registration">{pending ? 'Sending…' : 'Submit Round 1 Registration'} <Send size={14} /></button>}</div>
                 </form>
               </main>
             )}
@@ -211,3 +221,4 @@ export function Registration() {
     </section>
   );
 }
+
