@@ -6,28 +6,27 @@ export function Process() {
   const steps = [
     {
       round: 'ROUND 1',
-      title: 'ONLINE PPT SELECTION',
-      subtitle: 'Free Online Submission',
+      title: 'ONLINE REGISTRATION',
+      subtitle: 'Free Online Registration',
       badge: 'REGISTER IT FREE',
       badgeClass: 'badge-free',
       details: [
-        'Submit your own innovative project idea through the online registration form.',
-        'Upload your project PPT on ROUND 1 before the deadline.',
-        'Online submissions only — no entry fee required for Round 1.',
+        'Register your team online with basic details.',
+        'Online registration is 100% free — no entry fee required for Round 1.',
         'Shortlisted teams confirmation on 8–9 SEPTEMBER.',
       ],
     },
     {
       round: 'ROUND 2',
-      title: 'OFFLINE HACKATHON',
+      title: 'OFFLINE HACKATHON & PPT SUBMISSION',
       subtitle: 'September 25 & 26, 2026',
       badge: '₹1,500 / TEAM (AFTER SELECTION)',
       badgeClass: 'badge-paid',
       details: [
         'Venue: Offline | Excel Engineering College campus.',
+        'Submit and present your project PPT on your chosen topic during Round 2.',
         'Payment of ₹1,500 per team is collected ONLY AFTER selection in Round 1.',
-        'Non-stop 36-hour build window with food, wifi, and live mentoring.',
-        'Final prototype demo & judging on 26 September.',
+        'Non-stop 36-hour build window with food, wifi, live mentoring, and final prototype demo.',
       ],
     },
   ];
@@ -40,23 +39,8 @@ export function Process() {
             light
             eyebrow="03 / EVENT STRUCTURE & SELECTION"
             title="Two rounds. One high-intensity journey."
-            copy="From online PPT submission to an on-campus 36-hour build. Everything is designed to test real innovation and execution."
+            copy="From online registration to an on-campus 36-hour build and PPT topic presentation. Everything is designed to test real innovation and execution."
           />
-        </Reveal>
-
-        {/* Special Feature Highlight Box */}
-        <Reveal>
-          <div className="special-feature-card">
-            <div className="special-feature-badge">
-              <Sparkles size={16} /> SPECIAL FEATURE
-            </div>
-            <div className="special-feature-content">
-              <h3>Themes & On-The-Spot Problem Statement</h3>
-              <p>
-                Themes will be selected during <strong>Round 2</strong>, and the exact <strong>Problem Statement will be revealed ON THE SPOT!</strong> Prepare your team’s core technical stack and adaptability to tackle unexpected real-world challenges.
-              </p>
-            </div>
-          </div>
         </Reveal>
 
         <div className="process-rounds-grid">
@@ -89,8 +73,8 @@ export function Process() {
             <div className="summary-item">
               <FileText size={22} />
               <div>
-                <strong>Round 1 Submission</strong>
-                <span>Online PPT Upload • Free Entry</span>
+                <strong>Round 1 Registration</strong>
+                <span>Online Registration • 100% Free</span>
               </div>
             </div>
             <div className="summary-item">

@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
-import { ArrowDownRight, ArrowRight, BrainCircuit, Cloud, Code2, Database, Lightbulb } from 'lucide-react';
+import { ArrowDownRight, ArrowRight, BrainCircuit, Cloud, Code2, Database, ExternalLink, Lightbulb } from 'lucide-react';
+import { GOOGLE_FORM_URL } from '@/constants';
 import { Countdown } from './Countdown';
 
 export function Hero() {
@@ -42,11 +43,11 @@ export function Hero() {
             <p className="hero-subtitle">A NATIONAL LEVEL HACKATHON <strong>///</strong></p>
             <p className="mono" style={{ color: '#5d6c8b', fontSize: 12, marginTop: 12, letterSpacing: '.04em' }}>CODE. COLLABORATE. CREATE IMPACT.</p>
             <div className="hero-actions">
-              <a href="#register" className="button-primary" data-testid="button-hero-register">Register now <ArrowDownRight size={15} /></a>
+              <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer" className="button-primary" data-testid="button-hero-register">Register now <ExternalLink size={15} /></a>
               <a href="#about" className="button-secondary" data-testid="button-hero-explore">Explore HACKEX’26 <ArrowRight size={15} /></a>
             </div>
             <div className="hero-facts">
-              <div className="fact"><b>Round 1</b><span>Free PPT<br />Submission</span></div>
+              <div className="fact"><b>Round 1</b><span>Free Online<br />Registration</span></div>
               <div className="fact"><b>8–9 Sep</b><span>Confirmation<br />Date</span></div>
               <div className="fact"><b>25–26 Sep</b><span>36-Hour Offline<br />Hackathon</span></div>
               <div className="fact"><b>₹1,500</b><span>Per Team<br />After Selection</span></div>

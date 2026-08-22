@@ -1,4 +1,5 @@
-import { ArrowRight, Instagram, Mail } from 'lucide-react';
+import { ArrowRight, ExternalLink, Instagram, Mail } from 'lucide-react';
+import { GOOGLE_FORM_URL } from '@/constants';
 
 export function Footer() {
   return (
@@ -10,8 +11,8 @@ export function Footer() {
             <h2 className="motto-title">BUILD. THINK. INNOVATE.</h2>
             <p className="motto-sub">INNOVATE TODAY, IMPACT TOMORROW.</p>
           </div>
-          <a href="#register" className="button-primary motto-cta" data-testid="link-footer-motto-cta">
-            Register your team <ArrowRight size={15} />
+          <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer" className="button-primary motto-cta" data-testid="link-footer-motto-cta">
+            Register your team <ExternalLink size={15} />
           </a>
         </div>
 
@@ -61,8 +62,8 @@ export function Footer() {
 
               <div className="contact-actions">
                 <a href="#contact" data-testid="link-footer-coordinators" className="footer-pill-btn">Coordinators</a>
-                <a href="#register" data-testid="link-footer-register" className="footer-pill-btn primary">
-                  <ArrowRight size={13} /> Register team
+                <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer" data-testid="link-footer-register" className="footer-pill-btn primary">
+                  <ExternalLink size={13} /> Register team
                 </a>
               </div>
             </div>

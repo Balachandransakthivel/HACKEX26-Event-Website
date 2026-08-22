@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { ArrowRight, Menu, X } from 'lucide-react';
-import { navItems } from '@/constants';
+import { ArrowRight, Menu, X, ExternalLink } from 'lucide-react';
+import { navItems, GOOGLE_FORM_URL } from '@/constants';
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,9 +15,9 @@ export function Header() {
           {navItems.map(([label, href]) => (
             <a href={href} key={href} onClick={() => setMenuOpen(false)} data-testid={`link-nav-${label.toLowerCase()}`}>{label}</a>
           ))}
-          <a href="#register" onClick={() => setMenuOpen(false)} data-testid="link-nav-register">Register</a>
+          <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} data-testid="link-nav-register">Register</a>
         </nav>
-        <a href="#register" className="nav-cta" data-testid="link-nav-cta">Register now <ArrowRight size={14} /></a>
+        <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer" className="nav-cta" data-testid="link-nav-cta">Register now <ExternalLink size={14} /></a>
         <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Close menu' : 'Open menu'} data-testid="button-menu">
           {menuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>

@@ -3,10 +3,10 @@ import { SectionHeading } from '@/components/ui/SectionHeading';
 
 export function Rules() {
   const rules = [
-    ['01', 'Round 1 Submission', 'Round 1 registration is 100% FREE. Submit your project idea and upload your project PPT online before the deadline.'],
+    ['01', 'Round 1 Registration', 'Round 1 registration is 100% FREE. Register your team online before the deadline.'],
     ['02', 'Selection Confirmation', 'Shortlisted teams will receive confirmation on 8–9 September 2026 with next-step instructions.'],
     ['03', 'Round 2 Payment', 'Selected teams pay ₹1,500 per team ONLY AFTER selection in Round 1.'],
-    ['04', 'On-The-Spot Problem Statement', 'Themes are selected during Round 2, and exact problem statements are revealed ON THE SPOT at kickoff!'],
+    ['04', 'Round 2 PPT & Topic Submission', 'Teams choose their topic and present their project PPT and prototype during Round 2.'],
     ['05', 'Offline Venue', 'Round 2 is a 36-hour offline event at Excel Engineering College campus on 25 & 26 September.'],
     ['06', 'Original Work & Identity', 'Open to college students with valid IDs. All builds must be original work created during the 36-hour window.'],
   ];

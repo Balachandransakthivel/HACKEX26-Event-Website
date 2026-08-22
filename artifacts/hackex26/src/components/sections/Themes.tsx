@@ -22,9 +22,9 @@ export function Themes() {
         </div>
         <div className="theme-note">
           <span>
-            <strong>Special Feature:</strong> Themes will be selected during Round 2, and the exact <strong>Problem Statement will be revealed ON THE SPOT!</strong>
+            <strong>Round 2 Evaluation:</strong> Select your theme and topic, and submit your <strong>PPT presentation during Round 2!</strong>
           </span>
-          <span className="mono">[ ON THE SPOT REVEAL ]</span>
+          <span className="mono">[ ROUND 2 PPT SUBMISSION ]</span>
         </div>
       </div>
     </section>

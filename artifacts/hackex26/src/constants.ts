@@ -1,6 +1,8 @@
 import { Factory, GraduationCap, HeartPulse, Lightbulb, WalletCards } from 'lucide-react';
 import type { FormState } from './types';
 
+export const GOOGLE_FORM_URL = (import.meta.env.VITE_GOOGLE_FORM_URL as string | undefined) || 'https://forms.google.com';
+
 export const themes = [
   { name: 'Healthcare', description: 'Build for healthier, more accessible lives.', icon: HeartPulse },
   { name: 'Edutech', description: 'Reimagine how knowledge moves and sticks.', icon: GraduationCap },
