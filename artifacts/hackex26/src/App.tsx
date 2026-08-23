@@ -16,6 +16,7 @@ import { Themes } from '@/components/sections/Themes';
 import { Timeline } from '@/components/sections/Timeline';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
+import { WelcomeSplash } from '@/components/ui/WelcomeSplash';
 import NotFound from '@/pages/not-found';
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const queryClient = new QueryClient();
 function Home() {
   return (
     <div className="site-shell">
+      <WelcomeSplash />
       <div className="grain" aria-hidden="true" />
       <Header />
       <main>

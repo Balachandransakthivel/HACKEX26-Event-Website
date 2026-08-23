@@ -8,7 +8,7 @@ export function FAQ() {
     ['Is Round 1 really free?', 'Yes. Register your team and submit the initial idea at no cost. Only selected teams move to Round 2, which is ₹1,500 per team.'],
     ['Can students from different colleges team up?', 'Yes. Cross-college teams are welcome as long as every member is an eligible student and can attend the offline event.'],
     ['What should we bring?', 'Bring your student IDs, laptops, chargers, any hardware your prototype needs and the willingness to iterate in public.'],
-    ['Do we need a finished idea to register?', 'No. We ask for the problem, a first solution direction and your technology choices. The idea can sharpen as you build.'],
+    ['Do we need a finished prototype for Round 1 registration?', 'No. In Round 1 (Online PPT Selection), your team selects a problem statement, submits your project idea, and uploads your project PPT. Selected PPT teams then move to Round 2 to build their working prototype on campus at Excel Engineering College.'],
     ['Where can I ask a question?', 'Email hackex2026@gmail.com or reach out to the Excel CSE team on Instagram. We will point you in the right direction.'],
   ];
   const [open, setOpen] = useState(0);

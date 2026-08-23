@@ -1,5 +1,5 @@
 import { MessageCircleQuestion, Rocket, Trophy, Users } from 'lucide-react';
-import officialPoster from '@assets/WhatsApp_Image_2026-08-17_at_12.39.44_PM_1786957997551.jpeg';
+import officialPoster from '@assets/hackex26_new_official_poster.jpg';
 import { Reveal } from '@/components/ui/Reveal';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 
@@ -9,9 +9,9 @@ export function About() {
       <div className="container">
         <div className="about-grid">
           <Reveal>
-            <SectionHeading eyebrow="01 / the premise" title="Make the next 36 hours count." copy="HACKEX’26 is a national-level offline hackathon for student builders who want to take a practical idea from first sketch to working prototype. Bring the problem you cannot stop thinking about. Bring the people who will help you solve it." />
-            <p className="about-lead">Not a notice. <strong>A launchpad.</strong></p>
-            <p className="body-copy">Hosted by Excel Engineering College with the Techno Debuggers Club and Department of Computer Science & Engineering, HACKEX is where useful ideas get the pressure, feedback and momentum to become real.</p>
+            <SectionHeading eyebrow="01 / the premise" title="Choose your problem statement & build on campus." copy="HACKEX’26 is a national-level hackathon. In Round 1 (Online PPT Selection), teams choose a problem statement, submit their innovative project idea, and upload their project PPT. Selected PPT teams move to Round 2 on campus at Excel Engineering College to build their working prototype!" />
+            <p className="about-lead">Select your track. <strong>Build the future.</strong></p>
+            <p className="body-copy">Jointly organized by Techno Debuggers Club and the Department of Computer Science and Engineering, Excel Engineering College (Autonomous), in association with Cube AI Solutions.</p>
           </Reveal>
           <Reveal>
             <figure className="poster-card">

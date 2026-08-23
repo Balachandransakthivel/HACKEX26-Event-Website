@@ -47,9 +47,9 @@ export function Hero() {
               <a href="#about" className="button-secondary" data-testid="button-hero-explore">Explore HACKEX’26 <ArrowRight size={15} /></a>
             </div>
             <div className="hero-facts">
-              <div className="fact"><b>Round 1</b><span>Free Online<br />Registration</span></div>
+              <div className="fact"><b>Round 1</b><span>Online PPT<br />Selection (Free)</span></div>
               <div className="fact"><b>8–9 Sep</b><span>Confirmation<br />Date</span></div>
-              <div className="fact"><b>25–26 Sep</b><span>36-Hour Offline<br />Hackathon</span></div>
+              <div className="fact"><b>25–26 Sep</b><span>Offline Campus<br />Hackathon</span></div>
               <div className="fact"><b>₹1,500</b><span>Per Team<br />After Selection</span></div>
             </div>
           </div>

@@ -22,16 +22,16 @@ export function Registration() {
             </div>
             
             <div className="google-form-content">
-              <h3>Round 1 Online Registration</h3>
+              <h3>Round 1 Online Registration (PPT Selection)</h3>
               <p>
-                Complete your team registration directly on our official Google Form. 
-                Round 1 is <strong>100% Free</strong> with no entry fee required.
+                Choose your problem statement, submit your innovative project idea, and upload your project PPT directly on our official Google Form. 
+                Round 1 is <strong>100% Free</strong> with no entry fee required. Selected PPT teams move to Round 2 to build on campus!
               </p>
 
               <div className="google-form-highlights">
                 <div className="highlight-pill">
                   <CheckCircle2 size={16} className="pill-icon" />
-                  <span>Free Entry for Round 1</span>
+                  <span>Free Entry & PPT Submission</span>
                 </div>
                 <div className="highlight-pill">
                   <CheckCircle2 size={16} className="pill-icon" />
