@@ -2,7 +2,7 @@ import { Factory, GraduationCap, HeartPulse, Lightbulb, WalletCards } from 'luci
 import type { FormState } from './types';
 
 export const GOOGLE_FORM_URL = (import.meta.env.VITE_GOOGLE_FORM_URL as string | undefined) || 'https://docs.google.com/forms/d/e/1FAIpQLScvTjbgZrsRsoLp-Fyl-I4PHcDn8eUlSoo1vTqx_cZ5A3BfMw/viewform?usp=dialog';
-export const GUIDELINES_PDF_URL = (import.meta.env.BASE_URL.replace(/\/$/, '') || '') + '/HACKEX_26_Guidelines.pdf';
+export const GUIDELINES_PDF_URL = (import.meta.env.VITE_GUIDELINES_PDF_URL as string | undefined) || 'https://drive.google.com/file/d/1XHnq-AWf9tCVjz6LY7EUjdCemM04DPc1/view?usp=sharing';
 
 export const themes = [
   {
