@@ -1,5 +1,5 @@
 {
-  "buildCommand": "mkdir -p dist && pnpm --filter @workspace/hackex26 run build && cp -R artifacts/hackex26/dist/. dist/",
+  "buildCommand": "mkdir -p ../../dist && pnpm --filter @workspace/hackex26 run build && cp -R dist/. ../../dist/",
   "outputDirectory": "dist",
   "framework": "vite",
   "rewrites": [
