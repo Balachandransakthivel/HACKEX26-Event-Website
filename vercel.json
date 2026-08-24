@@ -1,0 +1,5 @@
+{
+  "buildCommand": "pnpm --filter @workspace/hackex26 run build",
+  "outputDirectory": "artifacts/hackex26/dist/public",
+  "framework": "vite"
+}
