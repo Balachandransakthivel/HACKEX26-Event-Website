@@ -1,15 +1,21 @@
 import { cpSync } from 'node:fs';
 
-// Copies the vite build output to the repo-root dist/ folder.
-// URL-based paths make this independent of the current working directory,
-// so it behaves identically locally and on Vercel regardless of where
-// the build command is invoked from.
-try {
-  cpSync(new URL('./dist/', import.meta.url), new URL('../../dist/', import.meta.url), {
-    recursive: true,
-  });
-  console.log('[copy-dist] synced artifacts/hackex26/dist -> repo-root dist');
-} catch (err) {
-  console.error('[copy-dist] failed:', err);
-  process.exit(1);
+// Mirrors the vite build output to every location Vercel may validate as
+// the deployment output directory. URL-based paths make this independent
+// of the current working directory.
+const sources = new URL('./dist/', import.meta.url);
+
+const targets = [
+  ['repo-root dist', new URL('../../dist/', import.meta.url)],
+  ['repo-root public', new URL('../../public/', import.meta.url)],
+];
+
+for (const [label, dest] of targets) {
+  try {
+    cpSync(sources, dest, { recursive: true });
+    console.log(`[copy-dist] synced -> ${label}`);
+  } catch (err) {
+    console.error(`[copy-dist] failed for ${label}:`, err);
+    process.exit(1);
+  }
 }
