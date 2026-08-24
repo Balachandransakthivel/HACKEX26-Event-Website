@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
-import { ArrowDownRight, ArrowRight, BrainCircuit, Cloud, Code2, Database, ExternalLink, Lightbulb } from 'lucide-react';
-import { GOOGLE_FORM_URL } from '@/constants';
+import { ArrowDownRight, ArrowRight, BrainCircuit, Cloud, Code2, Database, ExternalLink, FileText, Lightbulb } from 'lucide-react';
+import { GOOGLE_FORM_URL, GUIDELINES_PDF_URL } from '@/constants';
 import { Countdown } from './Countdown';
 
 export function Hero() {
@@ -44,6 +44,7 @@ export function Hero() {
             <p className="mono" style={{ color: '#5d6c8b', fontSize: 12, marginTop: 12, letterSpacing: '.04em' }}>CODE. COLLABORATE. CREATE IMPACT.</p>
             <div className="hero-actions">
               <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer" className="button-primary" data-testid="button-hero-register">Register now <ExternalLink size={15} /></a>
+              <a href={GUIDELINES_PDF_URL} target="_blank" rel="noopener noreferrer" className="button-secondary" data-testid="button-hero-guidelines"><FileText size={15} /> Guidelines PDF</a>
               <a href="#about" className="button-secondary" data-testid="button-hero-explore">Explore HACKEX’26 <ArrowRight size={15} /></a>
             </div>
             <div className="hero-facts">

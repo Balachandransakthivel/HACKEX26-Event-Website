@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { ArrowRight, Menu, X, ExternalLink } from 'lucide-react';
-import { navItems, GOOGLE_FORM_URL } from '@/constants';
+import { Menu, X, ExternalLink, FileText } from 'lucide-react';
+import { navItems, GOOGLE_FORM_URL, GUIDELINES_PDF_URL } from '@/constants';
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,11 +15,19 @@ export function Header() {
           {navItems.map(([label, href]) => (
             <a href={href} key={href} onClick={() => setMenuOpen(false)} data-testid={`link-nav-${label.toLowerCase()}`}>{label}</a>
           ))}
+          <a href={GUIDELINES_PDF_URL} target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="nav-pdf-link" data-testid="link-nav-guidelines">
+            <FileText size={14} /> Guidelines PDF
+          </a>
           <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="mobile-menu-cta" data-testid="link-nav-register">
             Register Now <ExternalLink size={14} />
           </a>
         </nav>
-        <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer" className="nav-cta" data-testid="link-nav-cta">Register now <ExternalLink size={14} /></a>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <a href={GUIDELINES_PDF_URL} target="_blank" rel="noopener noreferrer" className="nav-pdf-btn" data-testid="link-nav-guidelines-btn">
+            <FileText size={14} /> Guidelines PDF
+          </a>
+          <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer" className="nav-cta" data-testid="link-nav-cta">Register now <ExternalLink size={14} /></a>
+        </div>
         <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Close menu' : 'Open menu'} data-testid="button-menu">
           {menuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
