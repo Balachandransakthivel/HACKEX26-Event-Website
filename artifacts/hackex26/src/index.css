@@ -1557,6 +1557,14 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   flex-shrink: 0;
 }
 
+.mobile-only {
+  display: none !important;
+}
+
+.desktop-only {
+  display: flex !important;
+}
+
 @media (max-width: 768px) {
   .guidelines-pdf-banner {
     flex-direction: column;
@@ -1572,6 +1580,12 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   }
   .nav-pdf-btn {
     display: none;
+  }
+  .mobile-only {
+    display: flex !important;
+  }
+  .desktop-only {
+    display: none !important;
   }
 }
 

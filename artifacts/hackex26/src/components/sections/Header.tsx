@@ -15,14 +15,14 @@ export function Header() {
           {navItems.map(([label, href]) => (
             <a href={href} key={href} onClick={() => setMenuOpen(false)} data-testid={`link-nav-${label.toLowerCase()}`}>{label}</a>
           ))}
-          <a href={GUIDELINES_PDF_URL} target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="nav-pdf-link" data-testid="link-nav-guidelines">
+          <a href={GUIDELINES_PDF_URL} target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="nav-pdf-link mobile-only" data-testid="link-nav-guidelines-mobile">
             <FileText size={14} /> Guidelines PDF
           </a>
-          <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="mobile-menu-cta" data-testid="link-nav-register">
+          <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="mobile-menu-cta mobile-only" data-testid="link-nav-register-mobile">
             Register Now <ExternalLink size={14} />
           </a>
         </nav>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+        <div className="desktop-only" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
           <a href={GUIDELINES_PDF_URL} target="_blank" rel="noopener noreferrer" className="nav-pdf-btn" data-testid="link-nav-guidelines-btn">
             <FileText size={14} /> Guidelines PDF
           </a>
