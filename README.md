@@ -6,28 +6,25 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![pnpm Workspaces](https://img.shields.io/badge/pnpm-Workspaces-F69220?logo=pnpm&logoColor=white)](https://pnpm.io/)
 
-A premium, modern, and fully responsive event website built for **HACKEX’26**, the national-level hackathon organized by **Excel Engineering College**.
+A premium, modern, and fully responsive event website built for **HACKEX’26**, the national-level hackathon organized by **Excel Engineering College** (Techno Debuggers Club).
 
 ---
 
-## 🚀 Features
+## 🚀 Key Features
 
-- ⚡ **High-Impact Visual System**: Built with modern dark mode aesthetic, dynamic glow effects, circuitry motifs, glassmorphism cards, and fluid animations.
-- 📌 **Comprehensive Event Information**:
-  - **Hero & Countdown**: Engaging introduction with real-time event timer.
-  - **Themes & Domains**: AI/ML, Blockchain, Smart Healthcare, Cyber Security, IoT & Automation, Open Innovation.
-  - **Prizes & Pool**: Highlighting grand prize pools, category winners, and participant perks.
-  - **Interactive Timeline**: Step-by-step event schedule from registration to finale.
-  - **Judging Criteria & Rules**: Transparent evaluation metrics and participant guidelines.
-  - **Coordinators & FAQs**: Contact channels and quick answers for attendees.
-- 📋 **5-Step Team Registration Flow**:
-  - Step 1: Team & Project Details
-  - Step 2: Leader & Member Details
-  - Step 3: Domain & Track Selection
-  - Step 4: Submission & Summary Review
-  - Step 5: Generated Registration Pass / Confirmation Copy
-  - Features `localStorage` state retention to prevent progress loss.
-- 🔌 **Google Apps Script Integration Ready**: Seamlessly sends registration entries directly to a Google Sheet endpoint via standard POST adapter.
+- ⚡ **High-Impact Dark Visual System**: Built with modern dark mode aesthetic (`#060b13`), glassmorphism cards, glowing circuitry motifs, and smooth interactive animations.
+- 📱 **100% Mobile Responsive Layout**: Padded mobile menu navigation drawer with dark glass overlay, fluid hero typography, and adaptive grid layouts across all mobile screen widths (320px–768px).
+- 📌 **Event Overview & Sections**:
+  - **Hero & Live Countdown**: Dynamic countdown timer counting down to the live event on 25 September 2026.
+  - **About & Official Poster**: Highlights event vision, venue, poster preview modal, and college credentials.
+  - **Themes & Tracks**: Healthcare, EduTech, FinTech, Industrial 5.0, and Open Innovation.
+  - **2-Round Process & Schedule**:
+    - **Round 1**: Online PPT Selection (**100% Free Entry**).
+    - **Round 2**: 36-Hour On-Campus Hackathon at Excel Engineering College (₹1,500 per team collected only after selection).
+  - **Prizes & Perks**: Trophy, certificates, cash prizes, food/accommodation, and networking.
+  - **Rules & Evaluation Criteria**: Transparent scoring parameters and participant guidelines.
+  - **FAQs & Student Coordinators**: Quick answers and direct coordinator contact channels.
+- 📋 **Direct Google Registration Integration**: Linked directly to official Google Form for seamless team registration and PPT uploads.
 
 ---
 
@@ -36,16 +33,15 @@ A premium, modern, and fully responsive event website built for **HACKEX’26**,
 ### **Frontend App (`artifacts/hackex26`)**
 - **Framework**: React 19 + TypeScript 5.9
 - **Build Tool**: Vite 7
-- **Styling**: Tailwind CSS v4 + Custom Utility CSS
+- **Styling**: Tailwind CSS v4 + Custom Modern CSS
 - **Animations**: Framer Motion
 - **Icons**: Lucide React + React Icons
-- **UI Components**: Radix UI primitives & custom UI components
+- **UI Primitives**: Radix UI
 
-### **Workspace & Backend (`artifacts/api-server`, `lib/*`)**
+### **Monorepo Workspace (`artifacts/api-server`, `artifacts/mockup-sandbox`)**
 - **Package Manager**: pnpm Workspaces
-- **API Server**: Express 5
-- **Database / ORM**: PostgreSQL + Drizzle ORM
-- **Validation**: Zod schema validation
+- **API Server**: Express 5 + Pino Logging
+- **Database / ORM**: Drizzle ORM + PostgreSQL ready
 
 ---
 
@@ -54,22 +50,20 @@ A premium, modern, and fully responsive event website built for **HACKEX’26**,
 ```text
 Event-Website-Builder-1/
 ├── artifacts/
-│   ├── hackex26/               # Main frontend single-page hackathon website
+│   ├── hackex26/               # Main frontend hackathon website
 │   │   ├── src/
-│   │   │   ├── components/     # UI components and registration flow forms
-│   │   │   ├── App.tsx         # Main page layout & event content sections
-│   │   │   ├── index.css       # Visual system, themes, and animations
-│   │   │   └── main.tsx        # Application entry point
+│   │   │   ├── components/     # UI components and event section components
+│   │   │   │   ├── sections/   # Hero, About, Themes, Process, Prizes, Rules, Registration, Header, Footer
+│   │   │   │   └── ui/         # WelcomeSplash, Reveal, SectionHeading, Tooltip, Toast
+│   │   │   ├── constants.ts    # Centralized data, themes, nav items, and Google Form URL
+│   │   │   ├── index.css       # Visual design system, dark mode tokens, and media queries
+│   │   │   └── App.tsx         # Main page router and layout shell
 │   │   ├── vite.config.ts      # Vite configuration
 │   │   └── package.json
-│   └── api-server/             # Express API server scaffold
-├── lib/
-│   ├── api-client-react/       # API hooks
-│   ├── api-spec/               # OpenAPI spec & Orval codegen
-│   ├── api-zod/                # Zod schemas generated from OpenAPI
-│   └── db/                     # Drizzle ORM schema & DB connection
-├── pnpm-workspace.yaml         # pnpm workspace configurations
-├── package.json                # Root package configuration
+│   ├── api-server/             # Backend API server scaffold
+│   └── mockup-sandbox/         # UI sandbox environment
+├── pnpm-workspace.yaml         # pnpm workspace configuration
+├── package.json                # Root workspace configuration
 └── README.md                   # Documentation
 ```
 
@@ -80,7 +74,7 @@ Event-Website-Builder-1/
 ### Prerequisites
 
 Ensure you have the following installed on your environment:
-- **Node.js**: v20 or higher
+- **Node.js**: `v20.x` or higher
 - **pnpm**: `v10.x` (Install via `npm i -g pnpm`)
 
 ### Installation
@@ -98,22 +92,22 @@ Ensure you have the following installed on your environment:
 
 ---
 
-## 🏃 Running the Application
+## 🏃 Running locally
 
-### Launch Frontend Web App
+### Development Mode
 
-To start the Vite development server for the HACKEX’26 website:
+Start the local development server for the HACKEX’26 website:
 
 ```bash
 pnpm --filter @workspace/hackex26 run dev
 ```
 
-The application will be running live at:
-👉 **[http://localhost:5000](http://localhost:5000)**
+The application will be running live at:  
+👉 **`http://localhost:5000`**
 
 ### Type Checking & Building
 
-- **Run full TypeScript typecheck across workspace**:
+- **Run full TypeScript typecheck across all workspace packages**:
   ```bash
   pnpm run typecheck
   ```
@@ -125,21 +119,23 @@ The application will be running live at:
 
 ---
 
-## ⚙️ Environment Variables
+## 🌐 Deploying to Production
 
-Optionally set environment variables in your environment or `.env` file:
+The compiled static assets will be output to `artifacts/hackex26/dist/public/`.
 
-| Variable | Description | Default |
-|---|---|---|
-| `PORT` | Local port for Vite server | `5000` |
-| `BASE_PATH` | Base path URL routing | `/` |
-| `VITE_GOOGLE_APPS_SCRIPT_URL` | Google Apps Script Web App URL for receiving registrations in Google Sheets | *Optional* |
+- **Vercel**:
+  - Root Directory: `artifacts/hackex26`
+  - Build Command: `pnpm run build`
+  - Output Directory: `dist/public`
+
+- **Netlify / Static Hosting**:
+  - Publish folder: `artifacts/hackex26/dist/public`
 
 ---
 
 ## 🏫 Organized By
 
-**Excel Engineering College**  
+**Excel Engineering College / Techno Debuggers Club**  
 *National Level Hackathon — HACKEX’26*
 
 ---

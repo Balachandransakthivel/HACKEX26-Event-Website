@@ -15,7 +15,9 @@ export function Header() {
           {navItems.map(([label, href]) => (
             <a href={href} key={href} onClick={() => setMenuOpen(false)} data-testid={`link-nav-${label.toLowerCase()}`}>{label}</a>
           ))}
-          <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} data-testid="link-nav-register">Register</a>
+          <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="mobile-menu-cta" data-testid="link-nav-register">
+            Register Now <ExternalLink size={14} />
+          </a>
         </nav>
         <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer" className="nav-cta" data-testid="link-nav-cta">Register now <ExternalLink size={14} /></a>
         <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Close menu' : 'Open menu'} data-testid="button-menu">
