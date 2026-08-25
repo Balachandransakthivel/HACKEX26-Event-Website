@@ -49,9 +49,9 @@ export function Hero() {
             </div>
             <div className="hero-facts">
               <div className="fact"><b>Round 1</b><span>Online PPT<br />Selection (Free)</span></div>
+              <div className="fact"><b>8 Sep</b><span>PPT Submit<br />Deadline</span></div>
               <div className="fact"><b>8–9 Sep</b><span>Confirmation<br />Date</span></div>
-              <div className="fact"><b>25–26 Sep</b><span>Offline Campus<br />Hackathon</span></div>
-              <div className="fact"><b>₹1,500</b><span>Per Team<br />After Selection</span></div>
+              <div className="fact"><b>25–26 Sep</b><span>36-Hour Offline<br />Hackathon</span></div>
             </div>
           </div>
           <div ref={artRef} className="hero-art" aria-label="Illustration of a coding laptop">

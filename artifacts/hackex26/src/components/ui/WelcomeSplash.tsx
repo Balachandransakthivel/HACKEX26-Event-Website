@@ -80,14 +80,58 @@ export function WelcomeSplash({ onComplete }: WelcomeSplashProps) {
               <div className="splash-mark-ring" />
             </motion.div>
 
-            {/* Title */}
+            {/* Kinetic Animated Title */}
             <motion.h1
-              className="splash-title"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.35, duration: 0.6 }}
+              className="splash-hero-title"
+              aria-label="HACKEX ’26"
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: { opacity: 0 },
+                visible: {
+                  opacity: 1,
+                  transition: { staggerChildren: 0.05, delayChildren: 0.25 },
+                },
+              }}
             >
-              HACKE<span className="brand-x">X</span>’26
+              {'HACKE'.split('').map((char, index) => (
+                <motion.span
+                  key={`char-${index}`}
+                  className="splash-letter"
+                  variants={{
+                    hidden: { opacity: 0, y: 25, scale: 0.7, rotateX: -90 },
+                    visible: { opacity: 1, y: 0, scale: 1, rotateX: 0 },
+                  }}
+                  transition={{ type: 'spring', stiffness: 280, damping: 16 }}
+                >
+                  {char}
+                </motion.span>
+              ))}
+
+              <motion.span
+                className="splash-letter-x"
+                variants={{
+                  hidden: { opacity: 0, scale: 0, rotate: -45 },
+                  visible: { opacity: 1, scale: 1.15, rotate: 0 },
+                }}
+                transition={{ type: 'spring', stiffness: 320, damping: 14 }}
+              >
+                X
+              </motion.span>
+
+              {'’26'.split('').map((char, index) => (
+                <motion.span
+                  key={`num-${index}`}
+                  className="splash-letter splash-letter-num"
+                  variants={{
+                    hidden: { opacity: 0, y: 25, scale: 0.7, rotateX: -90 },
+                    visible: { opacity: 1, y: 0, scale: 1, rotateX: 0 },
+                  }}
+                  transition={{ type: 'spring', stiffness: 280, damping: 16 }}
+                >
+                  {char}
+                </motion.span>
+              ))}
             </motion.h1>
 
             <motion.p
