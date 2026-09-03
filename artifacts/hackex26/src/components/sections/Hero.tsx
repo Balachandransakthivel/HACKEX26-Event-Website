@@ -49,8 +49,8 @@ export function Hero() {
             </div>
             <div className="hero-facts">
               <div className="fact"><b>Round 1</b><span>Online PPT<br />Selection (Free)</span></div>
-              <div className="fact"><b>8 Sep</b><span>PPT Submit<br />Deadline</span></div>
-              <div className="fact"><b>8–9 Sep</b><span>Confirmation<br />Date</span></div>
+              <div className="fact"><b>13 Sep</b><span>PPT Submit<br />Deadline</span></div>
+              <div className="fact"><b>13–14 Sep</b><span>Confirmation<br />Date</span></div>
               <div className="fact"><b>25–26 Sep</b><span>36-Hour Offline<br />Hackathon</span></div>
             </div>
           </div>

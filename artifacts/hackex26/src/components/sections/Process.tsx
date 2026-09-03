@@ -7,14 +7,14 @@ export function Process() {
     {
       round: 'ROUND 1',
       title: 'ONLINE PPT SELECTION',
-      subtitle: '8 Sep Last Date to Submit PPT • 8–9 Sep Confirmation Date',
+      subtitle: '13 Sep PPT Submit Deadline • 13–14 Sep Confirmation Date',
       badge: 'REGISTER IT FREE',
       badgeClass: 'badge-free',
       details: [
         'Choose your own innovative problem statement and project idea.',
         'Submit your project idea through the registration form and upload your project PPT.',
-        '8 Sep: Last date to submit the project PPT.',
-        '8–9 Sep: Confirmation Date for shortlisted teams moving to Round 2.',
+        '13 Sep: PPT Submit Deadline.',
+        '13–14 Sep: Confirmation Date for shortlisted teams moving to Round 2.',
         'Online registration is 100% FREE — no entry fee required for Round 1.',
       ],
     },
@@ -75,14 +75,14 @@ export function Process() {
               <FileText size={22} />
               <div>
                 <strong>Round 1 PPT Submission</strong>
-                <span>8 Sep Deadline • 100% Free • Online PPT Upload</span>
+                <span>13 Sep PPT Submit Deadline • 100% Free • Online PPT Upload</span>
               </div>
             </div>
             <div className="summary-item">
               <Calendar size={22} />
               <div>
                 <strong>Selection Announcement</strong>
-                <span>8–9 September 2026</span>
+                <span>13–14 September 2026</span>
               </div>
             </div>
             <div className="summary-item">

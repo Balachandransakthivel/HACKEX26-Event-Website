@@ -29,7 +29,7 @@ export function Countdown() {
   return (
     <section className="countdown-band" aria-label="Countdown to HACKEX 26">
       <div className="container countdown-layout">
-        <div className="countdown-label">The clock starts<br /><strong>25 September 2026 / 09:00</strong></div>
+        <div className="countdown-label">The clock starts<br /><strong>25 September 2026 / 09:00 AM</strong></div>
         <div className="countdown">
           {values.map(([label, value], index) => (
             <div className="count-box" key={label as string}>

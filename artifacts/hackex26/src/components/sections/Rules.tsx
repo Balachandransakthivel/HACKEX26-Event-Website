@@ -5,8 +5,8 @@ import { GUIDELINES_PDF_URL } from '@/constants';
 
 export function Rules() {
   const rules = [
-    ['01', 'Round 1 - Online PPT Selection', 'Choose your problem statement and submit your innovative project idea & PPT through the registration form. Round 1 is 100% FREE.'],
-    ['02', 'Selection & Confirmation', 'Shortlisted teams based on PPT evaluation will receive confirmation on 8–9 September 2026.'],
+    ['01', 'Round 1 - Online PPT Selection', 'Choose your problem statement and submit your innovative project idea & PPT through the registration form before 13 September 2026. Round 1 is 100% FREE.'],
+    ['02', 'Selection & Confirmation', 'Shortlisted teams based on PPT evaluation will receive confirmation on 13–14 September 2026.'],
     ['03', 'Round 2 Payment', 'Selected PPT teams pay ₹1,500 per team ONLY AFTER selection in Round 1.'],
     ['04', 'Round 2 On-Campus Build', 'Selected teams move to Round 2 to build their project prototype on campus at Excel Engineering College.'],
     ['05', 'Offline Event Dates', 'Round 2 is an offline hackathon at Excel Engineering College campus on 25 & 26 September 2026.'],

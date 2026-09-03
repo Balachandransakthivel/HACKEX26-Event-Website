@@ -1,5 +1,5 @@
 import { Factory, GraduationCap, HeartPulse, Lightbulb, WalletCards } from 'lucide-react';
-import type { FormState } from './types';
+import type { FormState, ProblemStatement } from './types';
 
 export const GOOGLE_FORM_URL = (import.meta.env.VITE_GOOGLE_FORM_URL as string | undefined) || 'https://docs.google.com/forms/d/e/1FAIpQLScvTjbgZrsRsoLp-Fyl-I4PHcDn8eUlSoo1vTqx_cZ5A3BfMw/viewform?usp=dialog';
 export const GUIDELINES_PDF_URL = (import.meta.env.VITE_GUIDELINES_PDF_URL as string | undefined) || 'https://drive.google.com/file/d/1XHnq-AWf9tCVjz6LY7EUjdCemM04DPc1/view?usp=sharing';
@@ -14,6 +14,8 @@ export const themes = [
     color: '#10b981',
     gradient: 'linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(6, 182, 212, 0.05))',
     borderColor: 'rgba(16, 185, 129, 0.3)',
+    problemCountText: '5 Problem Statements',
+    ctaText: 'View Problems →',
   },
   {
     id: 'edutech',
@@ -24,6 +26,8 @@ export const themes = [
     color: '#8b5cf6',
     gradient: 'linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(59, 130, 246, 0.05))',
     borderColor: 'rgba(139, 92, 246, 0.3)',
+    problemCountText: '5 Problem Statements',
+    ctaText: 'View Problems →',
   },
   {
     id: 'fintech',
@@ -34,6 +38,8 @@ export const themes = [
     color: '#f59e0b',
     gradient: 'linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(16, 185, 129, 0.05))',
     borderColor: 'rgba(245, 158, 11, 0.3)',
+    problemCountText: '5 Problem Statements',
+    ctaText: 'View Problems →',
   },
   {
     id: 'industrial',
@@ -44,6 +50,8 @@ export const themes = [
     color: '#f97316',
     gradient: 'linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(2, 132, 199, 0.05))',
     borderColor: 'rgba(249, 115, 22, 0.3)',
+    problemCountText: '5 Problem Statements',
+    ctaText: 'View Problems →',
   },
   {
     id: 'openinno',
@@ -54,12 +62,195 @@ export const themes = [
     color: '#ec4899',
     gradient: 'linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(6, 182, 212, 0.05))',
     borderColor: 'rgba(236, 72, 153, 0.3)',
+    problemCountText: 'Submit Your Own Problem',
+    ctaText: 'Explore →',
+  },
+];
+
+export const problemStatements: ProblemStatement[] = [
+  // HEALTHCARE
+  {
+    id: 'HC-01',
+    themeId: 'healthcare',
+    themeName: 'HEALTHCARE',
+    title: 'Multimodal Early Diagnosis System',
+    description: 'Design a multimodal early-diagnosis system fusing imaging, vital signs, and clinical notes with explainable AI outputs.',
+  },
+  {
+    id: 'HC-02',
+    themeId: 'healthcare',
+    themeName: 'HEALTHCARE',
+    title: 'Federated Learning for Disease Prediction',
+    description: 'Build a federated learning system for hospitals to jointly train disease-prediction models without sharing raw patient data.',
+  },
+  {
+    id: 'HC-03',
+    themeId: 'healthcare',
+    themeName: 'HEALTHCARE',
+    title: 'Real-Time ICU Deterioration Early Warning',
+    description: 'Design a real-time sepsis/deterioration early-warning system from streaming ICU sensor data with sub-minute latency.',
+  },
+  {
+    id: 'HC-04',
+    themeId: 'healthcare',
+    themeName: 'HEALTHCARE',
+    title: 'Rare Disease Detection from EHR Data',
+    description: 'Build an AI system that detects rare diseases from longitudinal EHR data despite extreme class imbalance.',
+  },
+  {
+    id: 'HC-05',
+    themeId: 'healthcare',
+    themeName: 'HEALTHCARE',
+    title: 'Surgical Robotics Assistance',
+    description: 'Design a surgical robotics assist system with real-time tissue recognition and haptic feedback for precision guidance.',
+  },
+
+  // EDUTECH
+  {
+    id: 'ED-01',
+    themeId: 'edutech',
+    themeName: 'EDUTECH',
+    title: 'Adaptive AI Tutor',
+    description: 'Build an AI tutor that detects conceptual misconceptions via dialogue and adapts teaching in real time, including offline/rural support.',
+  },
+  {
+    id: 'ED-02',
+    themeId: 'edutech',
+    themeName: 'EDUTECH',
+    title: 'AI-Based Exam Malpractice Detection',
+    description: 'Design a proctoring system that detects exam malpractice using behavioral biometrics without invasive surveillance.',
+  },
+  {
+    id: 'ED-03',
+    themeId: 'edutech',
+    themeName: 'EDUTECH',
+    title: 'Personalized Curriculum Generation',
+    description: 'Build a curriculum-generation engine that auto-creates personalized learning paths aligned to national education standards.',
+  },
+  {
+    id: 'ED-04',
+    themeId: 'edutech',
+    themeName: 'EDUTECH',
+    title: 'Multilingual Offline Tutoring System',
+    description: 'Design a multilingual, low-resource-language tutoring system for underserved regions with no internet dependency.',
+  },
+  {
+    id: 'ED-05',
+    themeId: 'edutech',
+    themeName: 'EDUTECH',
+    title: 'Skill-to-Career Mapping',
+    description: 'Build a skill-gap-to-career-mapping engine that predicts future job-readiness from a student’s evolving learning trajectory.',
+  },
+
+  // FINTECH
+  {
+    id: 'FT-01',
+    themeId: 'fintech',
+    themeName: 'FINTECH',
+    title: 'Real-Time Fraud & Credit Risk Detection',
+    description: 'Build a real-time fraud detection and credit-risk engine for underbanked users using alternative data, with fairness guarantees.',
+  },
+  {
+    id: 'FT-02',
+    themeId: 'fintech',
+    themeName: 'FINTECH',
+    title: 'Explainable AML System',
+    description: 'Design an explainable AML (anti-money-laundering) system that flags suspicious transaction networks in real time.',
+  },
+  {
+    id: 'FT-03',
+    themeId: 'fintech',
+    themeName: 'FINTECH',
+    title: 'Decentralized Micro-Lending Platform',
+    description: 'Build a decentralized micro-lending platform using blockchain for trustless, transparent credit scoring.',
+  },
+  {
+    id: 'FT-04',
+    themeId: 'fintech',
+    themeName: 'FINTECH',
+    title: 'Algorithmic Trading Risk Simulator',
+    description: 'Design an algorithmic trading risk-simulation engine that stress-tests strategies against black-swan market events.',
+  },
+  {
+    id: 'FT-05',
+    themeId: 'fintech',
+    themeName: 'FINTECH',
+    title: 'AI Insurance Claims Fraud Detection',
+    description: 'Build an AI-driven insurance claims fraud detector that cross-verifies claims against multimodal evidence such as images, documents, and timelines.',
+  },
+
+  // INDUSTRIAL 5.0
+  {
+    id: 'I5-01',
+    themeId: 'industrial',
+    themeName: 'INDUSTRIAL 5.0',
+    title: 'Human-Robot Collaborative System',
+    description: 'Design a human-robot collaborative system that reallocates tasks dynamically based on fatigue detection and safety zones.',
+  },
+  {
+    id: 'I5-02',
+    themeId: 'industrial',
+    themeName: 'INDUSTRIAL 5.0',
+    title: 'Self-Healing Supply Chain',
+    description: 'Build a self-healing supply chain system that reroutes logistics in real time during disruptions using multi-agent AI.',
+  },
+  {
+    id: 'I5-03',
+    themeId: 'industrial',
+    themeName: 'INDUSTRIAL 5.0',
+    title: 'Full-Factory Digital Twin',
+    description: 'Design a full-factory digital twin that simulates and optimizes end-to-end production under changing demand and constraints.',
+  },
+  {
+    id: 'I5-04',
+    themeId: 'industrial',
+    themeName: 'INDUSTRIAL 5.0',
+    title: 'Edge AI Quality Inspection',
+    description: 'Build an edge-AI quality inspection system detecting micro-defects on high-speed production lines with near-zero latency.',
+  },
+  {
+    id: 'I5-05',
+    themeId: 'industrial',
+    themeName: 'INDUSTRIAL 5.0',
+    title: 'Swarm Robotics for Warehouses',
+    description: 'Design a swarm-robotics coordination system for autonomous material handling across a multi-zone warehouse.',
+  },
+
+  // OPEN INNOVATION
+  {
+    id: 'OI-01',
+    themeId: 'openinno',
+    themeName: 'OPEN INNOVATION',
+    title: 'Open Innovation',
+    description: 'Identify a meaningful real-world problem that is not restricted to Healthcare, Edutech, Fintech, or Industrial 5.0.',
+    isOpenInnovation: true,
+    suggestedAreas: [
+      'Agriculture & Rural Development',
+      'Smart Cities',
+      'Cybersecurity',
+      'Sustainability',
+      'Environment',
+      'Accessibility',
+      'Transportation',
+      'Governance',
+      'Social Impact',
+      'AI & Emerging Technologies',
+      'Any other meaningful real-world domain',
+    ],
+    submissionFormat: [
+      { label: 'Problem Title', description: 'Enter your proposed problem title.' },
+      { label: 'Problem Description', description: 'Clearly explain the real-world problem.' },
+      { label: 'Target Users', description: 'Who experiences or is affected by this problem?' },
+      { label: 'Existing Gap', description: 'What limitations exist in current solutions?' },
+      { label: 'Proposed Technology', description: 'Mention the technologies you plan to use.' },
+      { label: 'Expected Impact', description: 'Explain how your solution can create measurable impact.' },
+    ],
   },
 ];
 
 export const navItems = [
   ['About', '#about'],
-  ['Themes', '#themes'],
+  ['Themes & Problems', '#themes'],
   ['Timeline', '#timeline'],
   ['Prizes', '#prizes'],
   ['Rules', '#rules'],

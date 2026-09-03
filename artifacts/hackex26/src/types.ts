@@ -1,3 +1,17 @@
+export type ProblemStatement = {
+  id: string;
+  themeId: string;
+  themeName: string;
+  title: string;
+  description: string;
+  isOpenInnovation?: boolean;
+  suggestedAreas?: string[];
+  submissionFormat?: {
+    label: string;
+    description: string;
+  }[];
+};
+
 export type FormState = {
   teamName: string;
   teamSize: string;
@@ -23,4 +37,3 @@ export type Registration = FormState & {
   submittedAt: string;
   remoteSubmitted: boolean;
 };
-

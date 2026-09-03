@@ -1,4 +1,4 @@
-import { useEffect, type ReactNode } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
 import { ErrorBoundary } from '@/components/error-boundary';
@@ -17,11 +17,14 @@ import { Timeline } from '@/components/sections/Timeline';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { WelcomeSplash } from '@/components/ui/WelcomeSplash';
+import type { ProblemStatement } from '@/types';
 import NotFound from '@/pages/not-found';
 
 const queryClient = new QueryClient();
 
 function Home() {
+  const [selectedProblem, setSelectedProblem] = useState<ProblemStatement | null>(null);
+
   return (
     <div className="site-shell">
       <WelcomeSplash />
@@ -30,14 +33,20 @@ function Home() {
       <main>
         <Hero />
         <About />
-        <Themes />
+        <Themes
+          selectedProblem={selectedProblem}
+          onSelectProblem={(problem) => setSelectedProblem(problem)}
+        />
         <Process />
         <Timeline />
         <Prizes />
         <Rules />
         <FAQ />
         <People />
-        <Registration />
+        <Registration
+          selectedProblem={selectedProblem}
+          onClearProblem={() => setSelectedProblem(null)}
+        />
       </main>
       <Footer />
     </div>
